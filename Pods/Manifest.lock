@@ -1,0 +1,184 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - BarrageRenderer (2.1.0)
+  - Bugly (2.5.2)
+  - CYLTabBarController (1.28.5):
+    - CYLTabBarController/Core (= 1.28.5)
+  - CYLTabBarController/Core (1.28.5)
+  - DBDebugToolkit (0.5.0)
+  - IQKeyboardManager (6.5.5)
+  - LFImagePickerController/Core (1.7.0):
+    - LFImagePickerController/LFGifPlayer
+    - LFImagePickerController/LFToGIF
+  - LFImagePickerController/LFGifPlayer (1.7.0)
+  - LFImagePickerController/LFMediaEdit (1.7.0):
+    - LFImagePickerController/Core
+    - LFMediaEditingController
+  - LFImagePickerController/LFToGIF (1.7.0)
+  - LFMediaEditingController (1.4.2):
+    - LFMediaEditingController/JRFilterBar (= 1.4.2)
+    - LFMediaEditingController/JRPickColorView (= 1.4.2)
+    - LFMediaEditingController/LFColorMatrix (= 1.4.2)
+    - LFMediaEditingController/LFDownloadManager (= 1.4.2)
+    - LFMediaEditingController/LFEasyNoticeBar (= 1.4.2)
+    - LFMediaEditingController/LFFilterSuite (= 1.4.2)
+    - LFMediaEditingController/LFImageCoder (= 1.4.2)
+    - LFMediaEditingController/LFPhotoEditingController (= 1.4.2)
+    - LFMediaEditingController/LFPresentationCategory (= 1.4.2)
+    - LFMediaEditingController/LFTipsGuideView (= 1.4.2)
+    - LFMediaEditingController/LFVideoEditingController (= 1.4.2)
+    - LFMediaEditingController/SPDropMenu (= 1.4.2)
+  - LFMediaEditingController/JRFilterBar (1.4.2)
+  - LFMediaEditingController/JRPickColorView (1.4.2)
+  - LFMediaEditingController/LFColorMatrix (1.4.2)
+  - LFMediaEditingController/LFDownloadManager (1.4.2)
+  - LFMediaEditingController/LFEasyNoticeBar (1.4.2)
+  - LFMediaEditingController/LFFilterSuite (1.4.2)
+  - LFMediaEditingController/LFImageCoder (1.4.2)
+  - LFMediaEditingController/LFPhotoEditingController (1.4.2):
+    - LFMediaEditingController/JRFilterBar
+    - LFMediaEditingController/JRPickColorView
+    - LFMediaEditingController/LFColorMatrix
+    - LFMediaEditingController/LFDownloadManager
+    - LFMediaEditingController/LFEasyNoticeBar
+    - LFMediaEditingController/LFFilterSuite
+    - LFMediaEditingController/LFImageCoder
+    - LFMediaEditingController/LFPresentationCategory
+    - LFMediaEditingController/LFTipsGuideView
+    - LFMediaEditingController/SPDropMenu
+  - LFMediaEditingController/LFPresentationCategory (1.4.2)
+  - LFMediaEditingController/LFTipsGuideView (1.4.2)
+  - LFMediaEditingController/LFVideoEditingController (1.4.2):
+    - LFMediaEditingController/JRFilterBar
+    - LFMediaEditingController/JRPickColorView
+    - LFMediaEditingController/LFColorMatrix
+    - LFMediaEditingController/LFDownloadManager
+    - LFMediaEditingController/LFEasyNoticeBar
+    - LFMediaEditingController/LFFilterSuite
+    - LFMediaEditingController/LFImageCoder
+    - LFMediaEditingController/LFPresentationCategory
+    - LFMediaEditingController/LFTipsGuideView
+    - LFMediaEditingController/SPDropMenu
+  - LFMediaEditingController/SPDropMenu (1.4.2)
+  - lottie-ios (3.1.6)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.3.1)
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
+  - ReactiveObjC (3.1.1)
+  - RKNotificationHub (2.0.5)
+  - SDWebImage (5.6.1):
+    - SDWebImage/Core (= 5.6.1)
+  - SDWebImage/Core (5.6.1)
+  - UICKeyChainStore (2.1.2)
+  - UICountingLabel (1.2.0)
+  - UMCAnalytics (6.0.5):
+    - UMCCommon
+  - UMCCommon (2.1.1)
+  - UMCSecurityPlugins (1.0.6)
+  - WoodPeckeriOS (1.2.4)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AFNetworking (from `https://github.com/AFNetworking/AFNetworking.git`)
+  - BarrageRenderer
+  - Bugly
+  - CYLTabBarController
+  - DBDebugToolkit (= 0.5.0)
+  - IQKeyboardManager
+  - LFImagePickerController/LFMediaEdit
+  - lottie-ios
+  - Masonry
+  - MBProgressHUD
+  - MJRefresh
+  - PNChart (~> 0.8.5)
+  - ReactiveObjC
+  - RKNotificationHub
+  - SDWebImage
+  - UICKeyChainStore
+  - UICountingLabel
+  - UMCAnalytics
+  - UMCCommon
+  - UMCSecurityPlugins
+  - WoodPeckeriOS
+  - YYKit
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - BarrageRenderer
+    - Bugly
+    - CYLTabBarController
+    - DBDebugToolkit
+    - IQKeyboardManager
+    - LFImagePickerController
+    - LFMediaEditingController
+    - lottie-ios
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - PNChart
+    - ReactiveObjC
+    - RKNotificationHub
+    - SDWebImage
+    - UICKeyChainStore
+    - UICountingLabel
+    - UMCAnalytics
+    - UMCCommon
+    - UMCSecurityPlugins
+    - WoodPeckeriOS
+    - YYKit
+
+EXTERNAL SOURCES:
+  AFNetworking:
+    :git: https://github.com/AFNetworking/AFNetworking.git
+
+CHECKOUT OPTIONS:
+  AFNetworking:
+    :commit: 555385d2b8c6eb736fc2f5e3aeac46ec2d5ffddd
+    :git: https://github.com/AFNetworking/AFNetworking.git
+
+SPEC CHECKSUMS:
+  AFNetworking: ef6403a1383e5a6fa4ca961d7d524b1898ce0a84
+  BarrageRenderer: 00e5f8081d81f29c1fc12712ddf2f875bd9c6f77
+  Bugly: dbac48b55ad469a97cc4321045cd50df8f63d44f
+  CYLTabBarController: edd9fecba9afa3f2e9e44ed50ca6dde69941f25f
+  DBDebugToolkit: c04bb6f618051d3de447a4b4323f37826116cfed
+  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  LFImagePickerController: 05c39253f65426c740caba42f3c178bc01475c3d
+  LFMediaEditingController: 04f662d3a046caa2a9d2162c89e4bda1ce626b51
+  lottie-ios: 85ce835dd8c53e02509f20729fc7d6a4e6645a0a
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  RKNotificationHub: e926748820d719f21ff374657a47fceefa1796b4
+  SDWebImage: 7edb9c3ea661e77a66661f7f044de8c1b55d1120
+  UICKeyChainStore: 85db518bb1d294366d15ec9b92a416c4e670518f
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+  UMCAnalytics: 045be2cd1ec05aa95ad62405a850757f932e2d59
+  UMCCommon: 971f324a5a99c9d662ae040a815e7e3d7ef8b2a8
+  UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
+  WoodPeckeriOS: bff163c8c996efd45e2fb562f68f6db7f901ac90
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 975050c3075ce5f867af4791d5cb212c12ad5882
+
+COCOAPODS: 1.9.1
