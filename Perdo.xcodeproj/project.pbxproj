@@ -3,14 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0404A22429EDDA00C80A68 /* perdo_Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C0404A12429EDDA00C80A68 /* perdo_Info.plist */; };
+		5C0404AD2429EE9B00C80A68 /* MainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404AB2429EE9B00C80A68 /* MainNavController.m */; };
+		5C0404AE2429EE9B00C80A68 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404AC2429EE9B00C80A68 /* MainTabBarController.m */; };
+		5C0404CD2429EEB500C80A68 /* ClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404B12429EEB500C80A68 /* ClassViewController.m */; };
+		5C0404CE2429EEB500C80A68 /* ExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404B82429EEB500C80A68 /* ExerciseViewController.m */; };
+		5C0404CF2429EEB500C80A68 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404BE2429EEB500C80A68 /* IndexViewController.m */; };
+		5C0404D02429EEB500C80A68 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404C42429EEB500C80A68 /* MineViewController.m */; };
+		5C0404D12429EEB500C80A68 /* MailListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404C92429EEB500C80A68 /* MailListViewController.m */; };
+		5C0404D82429EEE100C80A68 /* APPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404D32429EEE100C80A68 /* APPHelper.m */; };
+		5C0404FC2429EF0100C80A68 /* UIImage+Compress.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404DB2429EF0100C80A68 /* UIImage+Compress.m */; };
+		5C0404FD2429EF0100C80A68 /* BEEGIFImageSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404DC2429EF0100C80A68 /* BEEGIFImageSerialization.m */; };
+		5C0405002429EF0100C80A68 /* UIImageView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404E92429EF0100C80A68 /* UIImageView+CornerRadius.m */; };
+		5C0405012429EF0100C80A68 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404ED2429EF0100C80A68 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		5C0405022429EF0100C80A68 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404EE2429EF0100C80A68 /* UINavigationBar+Awesome.m */; };
+		5C0405042429EF0100C80A68 /* UIViewController+AddCommenNotify.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404F02429EF0100C80A68 /* UIViewController+AddCommenNotify.m */; };
+		5C0405052429EF0100C80A68 /* NSArray+CheckSP.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404F22429EF0100C80A68 /* NSArray+CheckSP.m */; };
+		5C0405062429EF0100C80A68 /* UIView+SNFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404F32429EF0100C80A68 /* UIView+SNFoundation.m */; };
+		5C0405072429EF0100C80A68 /* AFHTTPSessionManager+RetryPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404F62429EF0100C80A68 /* AFHTTPSessionManager+RetryPolicy.m */; };
+		5C0405082429EF0100C80A68 /* NSObject+AssociatedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404F72429EF0100C80A68 /* NSObject+AssociatedDictionary.m */; };
+		5C0405092429EF0100C80A68 /* ObjcAssociatedObjectHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0404F82429EF0100C80A68 /* ObjcAssociatedObjectHelpers.m */; };
+		5C0405122429FC6500C80A68 /* MemberInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0405102429FC6400C80A68 /* MemberInfoModel.m */; };
+		5C0405162429FCE400C80A68 /* PhoneLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0405132429FCE300C80A68 /* PhoneLoginViewController.m */; };
+		5C0405172429FCE400C80A68 /* PhoneLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0405142429FCE300C80A68 /* PhoneLoginViewController.xib */; };
+		5C04051E2429FDFE00C80A68 /* ProtocolLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0405192429FDFD00C80A68 /* ProtocolLabel.m */; };
+		5C04051F2429FDFE00C80A68 /* AuthCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C04051D2429FDFE00C80A68 /* AuthCodeView.m */; };
 		5C4D521C2429E686001AE779 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4D521B2429E686001AE779 /* AppDelegate.m */; };
-		5C4D521F2429E686001AE779 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4D521E2429E686001AE779 /* SceneDelegate.m */; };
-		5C4D52222429E686001AE779 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4D52212429E686001AE779 /* ViewController.m */; };
-		5C4D52252429E686001AE779 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4D52232429E686001AE779 /* Main.storyboard */; };
 		5C4D52272429E688001AE779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C4D52262429E688001AE779 /* Assets.xcassets */; };
 		5C4D522A2429E688001AE779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4D52282429E688001AE779 /* LaunchScreen.storyboard */; };
 		5C4D522D2429E688001AE779 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4D522C2429E688001AE779 /* main.m */; };
@@ -38,17 +60,63 @@
 
 /* Begin PBXFileReference section */
 		0F585664F33D16024D59559C /* Pods_Perdo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Perdo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0404A12429EDDA00C80A68 /* perdo_Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = perdo_Info.plist; sourceTree = "<group>"; };
+		5C0404A92429EE9B00C80A68 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		5C0404AA2429EE9B00C80A68 /* MainNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavController.h; sourceTree = "<group>"; };
+		5C0404AB2429EE9B00C80A68 /* MainNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavController.m; sourceTree = "<group>"; };
+		5C0404AC2429EE9B00C80A68 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		5C0404B12429EEB500C80A68 /* ClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassViewController.m; sourceTree = "<group>"; };
+		5C0404B22429EEB500C80A68 /* ClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassViewController.h; sourceTree = "<group>"; };
+		5C0404B72429EEB500C80A68 /* ExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseViewController.h; sourceTree = "<group>"; };
+		5C0404B82429EEB500C80A68 /* ExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseViewController.m; sourceTree = "<group>"; };
+		5C0404BD2429EEB500C80A68 /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		5C0404BE2429EEB500C80A68 /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
+		5C0404C32429EEB500C80A68 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		5C0404C42429EEB500C80A68 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		5C0404C92429EEB500C80A68 /* MailListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailListViewController.m; sourceTree = "<group>"; };
+		5C0404CA2429EEB500C80A68 /* MailListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailListViewController.h; sourceTree = "<group>"; };
+		5C0404D22429EEE100C80A68 /* APPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPHelper.h; sourceTree = "<group>"; };
+		5C0404D32429EEE100C80A68 /* APPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPHelper.m; sourceTree = "<group>"; };
+		5C0404D52429EEE100C80A68 /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
+		5C0404D62429EEE100C80A68 /* FontMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontMacro.h; sourceTree = "<group>"; };
+		5C0404D72429EEE100C80A68 /* ColorMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMacro.h; sourceTree = "<group>"; };
+		5C0404DB2429EF0100C80A68 /* UIImage+Compress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Compress.m"; sourceTree = "<group>"; };
+		5C0404DC2429EF0100C80A68 /* BEEGIFImageSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEEGIFImageSerialization.m; sourceTree = "<group>"; };
+		5C0404DD2429EF0100C80A68 /* UIImage+Compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Compress.h"; sourceTree = "<group>"; };
+		5C0404DE2429EF0100C80A68 /* BEEGIFImageSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEEGIFImageSerialization.h; sourceTree = "<group>"; };
+		5C0404DF2429EF0100C80A68 /* UIViewController+AddCommenNotify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AddCommenNotify.h"; sourceTree = "<group>"; };
+		5C0404E12429EF0100C80A68 /* UIImageView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CornerRadius.h"; sourceTree = "<group>"; };
+		5C0404E32429EF0100C80A68 /* NSArray+CheckSP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CheckSP.h"; sourceTree = "<group>"; };
+		5C0404E42429EF0100C80A68 /* UIView+SNFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SNFoundation.h"; sourceTree = "<group>"; };
+		5C0404E92429EF0100C80A68 /* UIImageView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CornerRadius.m"; sourceTree = "<group>"; };
+		5C0404EB2429EF0100C80A68 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		5C0404EC2429EF0100C80A68 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		5C0404ED2429EF0100C80A68 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		5C0404EE2429EF0100C80A68 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		5C0404F02429EF0100C80A68 /* UIViewController+AddCommenNotify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AddCommenNotify.m"; sourceTree = "<group>"; };
+		5C0404F22429EF0100C80A68 /* NSArray+CheckSP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CheckSP.m"; sourceTree = "<group>"; };
+		5C0404F32429EF0100C80A68 /* UIView+SNFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SNFoundation.m"; sourceTree = "<group>"; };
+		5C0404F52429EF0100C80A68 /* ObjcAssociatedObjectHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcAssociatedObjectHelpers.h; sourceTree = "<group>"; };
+		5C0404F62429EF0100C80A68 /* AFHTTPSessionManager+RetryPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+RetryPolicy.m"; sourceTree = "<group>"; };
+		5C0404F72429EF0100C80A68 /* NSObject+AssociatedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AssociatedDictionary.m"; sourceTree = "<group>"; };
+		5C0404F82429EF0100C80A68 /* ObjcAssociatedObjectHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcAssociatedObjectHelpers.m; sourceTree = "<group>"; };
+		5C0404F92429EF0100C80A68 /* NSObject+AssociatedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AssociatedDictionary.h"; sourceTree = "<group>"; };
+		5C0404FA2429EF0100C80A68 /* AFHTTPSessionManager+RetryPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+RetryPolicy.h"; sourceTree = "<group>"; };
+		5C04050B2429EF1E00C80A68 /* PchFile.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PchFile.pch; sourceTree = "<group>"; };
+		5C0405102429FC6400C80A68 /* MemberInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberInfoModel.m; sourceTree = "<group>"; };
+		5C0405112429FC6500C80A68 /* MemberInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberInfoModel.h; sourceTree = "<group>"; };
+		5C0405132429FCE300C80A68 /* PhoneLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneLoginViewController.m; sourceTree = "<group>"; };
+		5C0405142429FCE300C80A68 /* PhoneLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneLoginViewController.xib; sourceTree = "<group>"; };
+		5C0405152429FCE400C80A68 /* PhoneLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneLoginViewController.h; sourceTree = "<group>"; };
+		5C0405192429FDFD00C80A68 /* ProtocolLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolLabel.m; sourceTree = "<group>"; };
+		5C04051A2429FDFD00C80A68 /* ProtocolLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolLabel.h; sourceTree = "<group>"; };
+		5C04051C2429FDFE00C80A68 /* AuthCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthCodeView.h; sourceTree = "<group>"; };
+		5C04051D2429FDFE00C80A68 /* AuthCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthCodeView.m; sourceTree = "<group>"; };
 		5C4D52172429E686001AE779 /* Perdo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Perdo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4D521A2429E686001AE779 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C4D521B2429E686001AE779 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5C4D521D2429E686001AE779 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		5C4D521E2429E686001AE779 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		5C4D52202429E686001AE779 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5C4D52212429E686001AE779 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5C4D52242429E686001AE779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C4D52262429E688001AE779 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C4D52292429E688001AE779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5C4D522B2429E688001AE779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C4D522C2429E688001AE779 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5C4D52322429E688001AE779 /* PerdoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerdoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4D52362429E688001AE779 /* PerdoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerdoTests.m; sourceTree = "<group>"; };
@@ -92,7 +160,6 @@
 				83077C5A823C3868132D4C1D /* Pods-Perdo.debug.xcconfig */,
 				A6B42605BDFF777BE77139DE /* Pods-Perdo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -102,6 +169,344 @@
 				0F585664F33D16024D59559C /* Pods_Perdo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C0404922429E8D000C80A68 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				5C04050C2429FBE700C80A68 /* Login */,
+				5C0404BB2429EEB500C80A68 /* Index */,
+				5C0404AF2429EEB500C80A68 /* Class */,
+				5C0404B52429EEB500C80A68 /* Exercise */,
+				5C0404C72429EEB500C80A68 /* MailList */,
+				5C0404C12429EEB500C80A68 /* Mine */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		5C0404932429E8D900C80A68 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5C0404D42429EEE100C80A68 /* Macro */,
+				5C0404D22429EEE100C80A68 /* APPHelper.h */,
+				5C0404D32429EEE100C80A68 /* APPHelper.m */,
+				5C0404AA2429EE9B00C80A68 /* MainNavController.h */,
+				5C0404AB2429EE9B00C80A68 /* MainNavController.m */,
+				5C0404A92429EE9B00C80A68 /* MainTabBarController.h */,
+				5C0404AC2429EE9B00C80A68 /* MainTabBarController.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		5C0404942429E8E200C80A68 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5C0404D92429EF0100C80A68 /* Extension */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		5C0404952429E8EF00C80A68 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5C4D52262429E688001AE779 /* Assets.xcassets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		5C0404962429E8F800C80A68 /* SpportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5C0404A12429EDDA00C80A68 /* perdo_Info.plist */,
+				5C4D52282429E688001AE779 /* LaunchScreen.storyboard */,
+				5C4D522C2429E688001AE779 /* main.m */,
+				5C04050B2429EF1E00C80A68 /* PchFile.pch */,
+			);
+			path = SpportingFiles;
+			sourceTree = "<group>";
+		};
+		5C0404AF2429EEB500C80A68 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				5C0404B02429EEB500C80A68 /* Controller */,
+				5C0404B32429EEB500C80A68 /* Model */,
+				5C0404B42429EEB500C80A68 /* View */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		5C0404B02429EEB500C80A68 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5C0404B22429EEB500C80A68 /* ClassViewController.h */,
+				5C0404B12429EEB500C80A68 /* ClassViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5C0404B32429EEB500C80A68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5C0404B42429EEB500C80A68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C0404B52429EEB500C80A68 /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				5C0404B62429EEB500C80A68 /* Controller */,
+				5C0404B92429EEB500C80A68 /* Model */,
+				5C0404BA2429EEB500C80A68 /* View */,
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
+		5C0404B62429EEB500C80A68 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5C0404B72429EEB500C80A68 /* ExerciseViewController.h */,
+				5C0404B82429EEB500C80A68 /* ExerciseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5C0404B92429EEB500C80A68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5C0404BA2429EEB500C80A68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C0404BB2429EEB500C80A68 /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				5C0404BC2429EEB500C80A68 /* Controller */,
+				5C0404BF2429EEB500C80A68 /* Model */,
+				5C0404C02429EEB500C80A68 /* View */,
+			);
+			path = Index;
+			sourceTree = "<group>";
+		};
+		5C0404BC2429EEB500C80A68 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5C0404BD2429EEB500C80A68 /* IndexViewController.h */,
+				5C0404BE2429EEB500C80A68 /* IndexViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5C0404BF2429EEB500C80A68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5C0404C02429EEB500C80A68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C0404C12429EEB500C80A68 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				5C0404C22429EEB500C80A68 /* Controller */,
+				5C0404C52429EEB500C80A68 /* Model */,
+				5C0404C62429EEB500C80A68 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		5C0404C22429EEB500C80A68 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5C0404C32429EEB500C80A68 /* MineViewController.h */,
+				5C0404C42429EEB500C80A68 /* MineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5C0404C52429EEB500C80A68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5C0404C62429EEB500C80A68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C0404C72429EEB500C80A68 /* MailList */ = {
+			isa = PBXGroup;
+			children = (
+				5C0404C82429EEB500C80A68 /* Controller */,
+				5C0404CB2429EEB500C80A68 /* Model */,
+				5C0404CC2429EEB500C80A68 /* View */,
+			);
+			path = MailList;
+			sourceTree = "<group>";
+		};
+		5C0404C82429EEB500C80A68 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5C0404CA2429EEB500C80A68 /* MailListViewController.h */,
+				5C0404C92429EEB500C80A68 /* MailListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5C0404CB2429EEB500C80A68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5C0404CC2429EEB500C80A68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C0404D42429EEE100C80A68 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				5C0404D52429EEE100C80A68 /* CommonMacro.h */,
+				5C0404D62429EEE100C80A68 /* FontMacro.h */,
+				5C0404D72429EEE100C80A68 /* ColorMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		5C0404D92429EF0100C80A68 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5C0404DA2429EF0100C80A68 /* UIImage */,
+				5C0404DF2429EF0100C80A68 /* UIViewController+AddCommenNotify.h */,
+				5C0404E12429EF0100C80A68 /* UIImageView+CornerRadius.h */,
+				5C0404E32429EF0100C80A68 /* NSArray+CheckSP.h */,
+				5C0404E42429EF0100C80A68 /* UIView+SNFoundation.h */,
+				5C0404E92429EF0100C80A68 /* UIImageView+CornerRadius.m */,
+				5C0404EA2429EF0100C80A68 /* Nav */,
+				5C0404F02429EF0100C80A68 /* UIViewController+AddCommenNotify.m */,
+				5C0404F22429EF0100C80A68 /* NSArray+CheckSP.m */,
+				5C0404F32429EF0100C80A68 /* UIView+SNFoundation.m */,
+				5C0404F42429EF0100C80A68 /* AFNetworking+RetryPolicy */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5C0404DA2429EF0100C80A68 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				5C0404DB2429EF0100C80A68 /* UIImage+Compress.m */,
+				5C0404DC2429EF0100C80A68 /* BEEGIFImageSerialization.m */,
+				5C0404DD2429EF0100C80A68 /* UIImage+Compress.h */,
+				5C0404DE2429EF0100C80A68 /* BEEGIFImageSerialization.h */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		5C0404EA2429EF0100C80A68 /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				5C0404EB2429EF0100C80A68 /* UINavigationController+FDFullscreenPopGesture.h */,
+				5C0404EC2429EF0100C80A68 /* UINavigationBar+Awesome.h */,
+				5C0404ED2429EF0100C80A68 /* UINavigationController+FDFullscreenPopGesture.m */,
+				5C0404EE2429EF0100C80A68 /* UINavigationBar+Awesome.m */,
+			);
+			path = Nav;
+			sourceTree = "<group>";
+		};
+		5C0404F42429EF0100C80A68 /* AFNetworking+RetryPolicy */ = {
+			isa = PBXGroup;
+			children = (
+				5C0404F52429EF0100C80A68 /* ObjcAssociatedObjectHelpers.h */,
+				5C0404F62429EF0100C80A68 /* AFHTTPSessionManager+RetryPolicy.m */,
+				5C0404F72429EF0100C80A68 /* NSObject+AssociatedDictionary.m */,
+				5C0404F82429EF0100C80A68 /* ObjcAssociatedObjectHelpers.m */,
+				5C0404F92429EF0100C80A68 /* NSObject+AssociatedDictionary.h */,
+				5C0404FA2429EF0100C80A68 /* AFHTTPSessionManager+RetryPolicy.h */,
+			);
+			path = "AFNetworking+RetryPolicy";
+			sourceTree = "<group>";
+		};
+		5C04050C2429FBE700C80A68 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5C04050D2429FC0A00C80A68 /* Controller */,
+				5C04050E2429FC2000C80A68 /* Model */,
+				5C04050F2429FC2700C80A68 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5C04050D2429FC0A00C80A68 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5C0405152429FCE400C80A68 /* PhoneLoginViewController.h */,
+				5C0405132429FCE300C80A68 /* PhoneLoginViewController.m */,
+				5C0405142429FCE300C80A68 /* PhoneLoginViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5C04050E2429FC2000C80A68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C0405112429FC6500C80A68 /* MemberInfoModel.h */,
+				5C0405102429FC6400C80A68 /* MemberInfoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5C04050F2429FC2700C80A68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C04051B2429FDFE00C80A68 /* AuthCodeView */,
+				5C0405182429FDFD00C80A68 /* ProtocolLabel */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C0405182429FDFD00C80A68 /* ProtocolLabel */ = {
+			isa = PBXGroup;
+			children = (
+				5C04051A2429FDFD00C80A68 /* ProtocolLabel.h */,
+				5C0405192429FDFD00C80A68 /* ProtocolLabel.m */,
+			);
+			path = ProtocolLabel;
+			sourceTree = "<group>";
+		};
+		5C04051B2429FDFE00C80A68 /* AuthCodeView */ = {
+			isa = PBXGroup;
+			children = (
+				5C04051C2429FDFE00C80A68 /* AuthCodeView.h */,
+				5C04051D2429FDFE00C80A68 /* AuthCodeView.m */,
+			);
+			path = AuthCodeView;
 			sourceTree = "<group>";
 		};
 		5C4D520E2429E686001AE779 = {
@@ -131,15 +536,11 @@
 			children = (
 				5C4D521A2429E686001AE779 /* AppDelegate.h */,
 				5C4D521B2429E686001AE779 /* AppDelegate.m */,
-				5C4D521D2429E686001AE779 /* SceneDelegate.h */,
-				5C4D521E2429E686001AE779 /* SceneDelegate.m */,
-				5C4D52202429E686001AE779 /* ViewController.h */,
-				5C4D52212429E686001AE779 /* ViewController.m */,
-				5C4D52232429E686001AE779 /* Main.storyboard */,
-				5C4D52262429E688001AE779 /* Assets.xcassets */,
-				5C4D52282429E688001AE779 /* LaunchScreen.storyboard */,
-				5C4D522B2429E688001AE779 /* Info.plist */,
-				5C4D522C2429E688001AE779 /* main.m */,
+				5C0404922429E8D000C80A68 /* Pages */,
+				5C0404932429E8D900C80A68 /* Config */,
+				5C0404942429E8E200C80A68 /* Tools */,
+				5C0404952429E8EF00C80A68 /* Source */,
+				5C0404962429E8F800C80A68 /* SpportingFiles */,
 			);
 			path = Perdo;
 			sourceTree = "<group>";
@@ -267,9 +668,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0404A22429EDDA00C80A68 /* perdo_Info.plist in Resources */,
 				5C4D522A2429E688001AE779 /* LaunchScreen.storyboard in Resources */,
 				5C4D52272429E688001AE779 /* Assets.xcassets in Resources */,
-				5C4D52252429E686001AE779 /* Main.storyboard in Resources */,
+				5C0405172429FCE400C80A68 /* PhoneLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,10 +738,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C4D52222429E686001AE779 /* ViewController.m in Sources */,
+				5C0405072429EF0100C80A68 /* AFHTTPSessionManager+RetryPolicy.m in Sources */,
+				5C0405042429EF0100C80A68 /* UIViewController+AddCommenNotify.m in Sources */,
+				5C0405022429EF0100C80A68 /* UINavigationBar+Awesome.m in Sources */,
+				5C0405062429EF0100C80A68 /* UIView+SNFoundation.m in Sources */,
+				5C04051F2429FDFE00C80A68 /* AuthCodeView.m in Sources */,
+				5C0404CE2429EEB500C80A68 /* ExerciseViewController.m in Sources */,
+				5C0405052429EF0100C80A68 /* NSArray+CheckSP.m in Sources */,
+				5C0405012429EF0100C80A68 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				5C0404CF2429EEB500C80A68 /* IndexViewController.m in Sources */,
 				5C4D521C2429E686001AE779 /* AppDelegate.m in Sources */,
+				5C0404CD2429EEB500C80A68 /* ClassViewController.m in Sources */,
+				5C0404FD2429EF0100C80A68 /* BEEGIFImageSerialization.m in Sources */,
+				5C0404D12429EEB500C80A68 /* MailListViewController.m in Sources */,
+				5C0405162429FCE400C80A68 /* PhoneLoginViewController.m in Sources */,
+				5C0405082429EF0100C80A68 /* NSObject+AssociatedDictionary.m in Sources */,
+				5C0404AD2429EE9B00C80A68 /* MainNavController.m in Sources */,
+				5C0405092429EF0100C80A68 /* ObjcAssociatedObjectHelpers.m in Sources */,
+				5C0404AE2429EE9B00C80A68 /* MainTabBarController.m in Sources */,
+				5C0404D82429EEE100C80A68 /* APPHelper.m in Sources */,
+				5C0404FC2429EF0100C80A68 /* UIImage+Compress.m in Sources */,
 				5C4D522D2429E688001AE779 /* main.m in Sources */,
-				5C4D521F2429E686001AE779 /* SceneDelegate.m in Sources */,
+				5C04051E2429FDFE00C80A68 /* ProtocolLabel.m in Sources */,
+				5C0404D02429EEB500C80A68 /* MineViewController.m in Sources */,
+				5C0405002429EF0100C80A68 /* UIImageView+CornerRadius.m in Sources */,
+				5C0405122429FC6500C80A68 /* MemberInfoModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,14 +798,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5C4D52232429E686001AE779 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C4D52242429E686001AE779 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5C4D52282429E688001AE779 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -510,14 +925,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Perdo/Info.plist;
+				GCC_PREFIX_HEADER = "/Users/predo/项目/Perdo/Perdo/SpportingFiles/PchFile.pch";
+				INFOPLIST_FILE = "/Users/predo/项目/Perdo/Perdo/SpportingFiles/perdo_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Perdo.perdo.Perdo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -527,14 +945,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Perdo/Info.plist;
+				GCC_PREFIX_HEADER = "/Users/predo/项目/Perdo/Perdo/SpportingFiles/PchFile.pch";
+				INFOPLIST_FILE = "/Users/predo/项目/Perdo/Perdo/SpportingFiles/perdo_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Perdo.perdo.Perdo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};

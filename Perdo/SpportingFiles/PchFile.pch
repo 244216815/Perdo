@@ -1,0 +1,51 @@
+//
+//  PchFile.pch
+//  Perdo
+//
+//  Created by Perdo on 2020/3/23.
+//  Copyright © 2020 Perdo. All rights reserved.
+//
+
+#ifndef PchFile_pch
+#define PchFile_pch
+
+/*Basic*/
+#import "Masonry.h"
+#import <YYKit/YYKit.h>
+#import <MJRefresh/MJRefresh.h>
+//#import <SDWebImage/UIImageView+WebCache.h>
+//#import "UIScrollView+EmptyDataSet.h"
+//#import "UIScrollView+ConfigRefresh.h"
+#import "UIViewController+AddCommenNotify.h"
+#if __has_feature(objc_arc)
+#import <ReactiveObjC/ReactiveObjC.h>
+#import <ReactiveObjC/RACReturnSignal.h>
+#endif
+//#import "UIViewController+BPNavigationItem.h"
+//#import "UITableViewCell+BPLineSpace.h"
+#import "NSArray+CheckSP.h"
+
+/*Macro*/
+#import "ColorMacro.h"
+#import "CommonMacro.h"
+#import "FontMacro.h"
+
+/*Config*/
+//#import "BEEUserdefultKey.h"
+//#import "BEENotificationKey.h"
+
+/*Custom*/
+
+//#import "BEEProgressHUD.h"
+#import "MemberInfoModel.h"
+
+/*Other*/
+//#import "BPKit.h"
+//#import "BEETraceManager.h"
+//#import "BEENetClient.h"
+//#import "BEEH5Configer.h"
+//#import "DCURLRouter.h"
+
+#import "APPHelper.h"
+
+#endif /* PchFile_pch */

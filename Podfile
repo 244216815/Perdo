@@ -14,7 +14,7 @@ target 'Perdo' do
     pod 'MJRefresh'
     pod 'YYKit'
     pod 'LFImagePickerController/LFMediaEdit'
-    pod 'IQKeyboardManager'
+#    pod 'IQKeyboardManager'
     
     #UI
     pod 'CYLTabBarController'
@@ -36,6 +36,5 @@ target 'Perdo' do
     pod 'WoodPeckeriOS', :configurations => ['Debug']
     pod 'DBDebugToolkit','= 0.5.0', :configurations => ['Debug']
     
-
     end
 

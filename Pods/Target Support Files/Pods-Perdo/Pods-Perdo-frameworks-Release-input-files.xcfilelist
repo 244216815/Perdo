@@ -2,7 +2,6 @@ ${PODS_ROOT}/Target Support Files/Pods-Perdo/Pods-Perdo-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
 ${BUILT_PRODUCTS_DIR}/BarrageRenderer/BarrageRenderer.framework
 ${BUILT_PRODUCTS_DIR}/CYLTabBarController/CYLTabBarController.framework
-${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
 ${BUILT_PRODUCTS_DIR}/LFImagePickerController/LFImagePickerController.framework
 ${BUILT_PRODUCTS_DIR}/LFMediaEditingController/LFMediaEditingController.framework
 ${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
