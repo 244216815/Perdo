@@ -93,7 +93,7 @@
                     <constraints>
                         <constraint firstAttribute="width" secondItem="Zae-Kf-Q1z" secondAttribute="height" multiplier="300:40" id="LMi-Lw-MAv"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="PingFangSC-Medium" family="PingFang SC" pointSize="16"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="16"/>
                     <state key="normal" title="立即登录" backgroundImage="login_btn">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>

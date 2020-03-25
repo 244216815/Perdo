@@ -7,7 +7,6 @@
 //
 
 #import "PhoneLoginViewController.h"
-#import "UINavigationController+FDFullscreenPopGesture.h"
 //#import "FLLoginService.h"
 //#import "BPWebViewController.h"
 //#import "WXApi.h"
@@ -16,6 +15,7 @@
 #import <BarrageRenderer/BarrageRenderer.h>
 //#import "HomePageBaseModel.h"
 //#import "UserConfigModel.h"
+#import "RoleChoicesViewController.h"
 
 @interface PhoneLoginViewController ()<UITextFieldDelegate,BarrageRendererDelegate>
 
@@ -119,6 +119,9 @@
 //                                       BEESuccessToast(@"登录成功");
 //                                    [MemberInfoModel loginSuccessWithUserInfo:response];
 //                                   }];
+    
+    RoleChoicesViewController *vc = [[RoleChoicesViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - UITextFieldDelegate

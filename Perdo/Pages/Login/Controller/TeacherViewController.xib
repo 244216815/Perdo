@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TeacherViewController">
+            <connections>
+                <outlet property="sureBtn" destination="GFr-fK-zk9" id="jhZ-lw-jlL"/>
+                <outlet property="teacherBtn1" destination="luQ-Gu-nO4" id="qNu-O4-fYc"/>
+                <outlet property="teacherBtn2" destination="IC7-Hy-tD6" id="rGp-aI-jq7"/>
+                <outlet property="teacherBtn3" destination="MSF-Ko-r52" id="8fZ-0k-XJB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择学校/教师职务" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOg-LJ-87c">
+                    <rect key="frame" x="30" y="30" width="228" height="29"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加入学校大家庭，让教育更简单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsQ-qT-oIf">
+                    <rect key="frame" x="30" y="69" width="200" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="所在学校" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3u-RI-grr">
+                    <rect key="frame" x="30" y="115" width="58" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="苏州市相城区实验小学" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVE-ga-kzu">
+                    <rect key="frame" x="30" y="144" width="143" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mrc-9N-p2k">
+                    <rect key="frame" x="30" y="167" width="315" height="0.5"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="DTm-bi-yb1"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是学校的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDH-em-y3q">
+                    <rect key="frame" x="30" y="197.5" width="72" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luQ-Gu-nO4">
+                    <rect key="frame" x="30" y="229.5" width="85" height="30"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="luQ-Gu-nO4" secondAttribute="height" multiplier="85:30" id="h3h-3o-T1C"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="班主任">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="班主任" backgroundImage="login_btn">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="teacherAction1:" destination="-1" eventType="touchUpInside" id="USs-VB-sM5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IC7-Hy-tD6">
+                    <rect key="frame" x="145" y="229.5" width="85" height="30"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="副班主任">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="副班主任" backgroundImage="login_btn">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="teacherAction2:" destination="-1" eventType="touchUpInside" id="cH6-a5-tXQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSF-Ko-r52">
+                    <rect key="frame" x="260" y="229.5" width="85" height="30"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="任课老师">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="任课老师" backgroundImage="login_btn">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="teacherAction3:" destination="-1" eventType="touchUpInside" id="q5g-f5-gUY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFr-fK-zk9">
+                    <rect key="frame" x="37.5" y="607" width="300" height="40"/>
+                    <state key="normal" title="完成" backgroundImage="login_btn">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" backgroundImage="login_btn"/>
+                    <connections>
+                        <action selector="sureAction:" destination="-1" eventType="touchUpInside" id="Ljp-wm-KQo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yVE-ga-kzu" firstAttribute="top" secondItem="W3u-RI-grr" secondAttribute="bottom" constant="12" id="996-xW-aHo"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="MSF-Ko-r52" secondAttribute="trailing" constant="30" id="And-qJ-cAk"/>
+                <constraint firstItem="GDH-em-y3q" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="B7X-nK-Pi4"/>
+                <constraint firstItem="SOg-LJ-87c" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="D0Q-1J-zv3"/>
+                <constraint firstItem="Mrc-9N-p2k" firstAttribute="top" secondItem="yVE-ga-kzu" secondAttribute="bottom" constant="6" id="GbW-hw-wvZ"/>
+                <constraint firstItem="SOg-LJ-87c" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="IKs-5r-f8q"/>
+                <constraint firstItem="IC7-Hy-tD6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Jp9-He-Qep"/>
+                <constraint firstItem="IC7-Hy-tD6" firstAttribute="width" secondItem="luQ-Gu-nO4" secondAttribute="width" id="LEG-sZ-Ps2"/>
+                <constraint firstItem="MSF-Ko-r52" firstAttribute="leading" secondItem="IC7-Hy-tD6" secondAttribute="trailing" constant="30" id="NOn-br-QXs"/>
+                <constraint firstItem="Mrc-9N-p2k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Nfr-Px-5tk"/>
+                <constraint firstItem="MSF-Ko-r52" firstAttribute="width" secondItem="luQ-Gu-nO4" secondAttribute="width" id="Pz1-ml-EmZ"/>
+                <constraint firstItem="MSF-Ko-r52" firstAttribute="centerY" secondItem="luQ-Gu-nO4" secondAttribute="centerY" id="Rn3-ej-80X"/>
+                <constraint firstItem="yVE-ga-kzu" firstAttribute="leading" secondItem="W3u-RI-grr" secondAttribute="leading" id="T2V-GB-ZRx"/>
+                <constraint firstItem="luQ-Gu-nO4" firstAttribute="top" secondItem="GDH-em-y3q" secondAttribute="bottom" constant="15" id="TTr-hY-Mpx"/>
+                <constraint firstItem="IC7-Hy-tD6" firstAttribute="height" secondItem="luQ-Gu-nO4" secondAttribute="height" id="Y9p-Zq-Uv5"/>
+                <constraint firstItem="GFr-fK-zk9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="am5-Fv-gzA"/>
+                <constraint firstAttribute="trailing" secondItem="Mrc-9N-p2k" secondAttribute="trailing" constant="30" id="fOe-Ek-96S"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="GFr-fK-zk9" secondAttribute="bottom" constant="20" id="heu-z5-W1L"/>
+                <constraint firstItem="luQ-Gu-nO4" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="hpY-OV-AV8"/>
+                <constraint firstItem="MSF-Ko-r52" firstAttribute="height" secondItem="luQ-Gu-nO4" secondAttribute="height" id="kyP-mt-PVZ"/>
+                <constraint firstItem="GDH-em-y3q" firstAttribute="top" secondItem="Mrc-9N-p2k" secondAttribute="bottom" constant="30" id="tyF-mU-goc"/>
+                <constraint firstItem="AsQ-qT-oIf" firstAttribute="top" secondItem="SOg-LJ-87c" secondAttribute="bottom" constant="10" id="uRa-na-trp"/>
+                <constraint firstItem="IC7-Hy-tD6" firstAttribute="leading" secondItem="luQ-Gu-nO4" secondAttribute="trailing" constant="30" id="uSP-eA-N8u"/>
+                <constraint firstItem="IC7-Hy-tD6" firstAttribute="centerY" secondItem="luQ-Gu-nO4" secondAttribute="centerY" id="uoL-dz-LR0"/>
+                <constraint firstItem="W3u-RI-grr" firstAttribute="top" secondItem="AsQ-qT-oIf" secondAttribute="bottom" constant="29" id="v1b-vd-4qx"/>
+                <constraint firstItem="AsQ-qT-oIf" firstAttribute="leading" secondItem="SOg-LJ-87c" secondAttribute="leading" id="vv2-TF-i6B"/>
+                <constraint firstItem="W3u-RI-grr" firstAttribute="leading" secondItem="AsQ-qT-oIf" secondAttribute="leading" id="zb8-Ie-wuC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="138.40000000000001" y="134.48275862068968"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_btn" width="300" height="40"/>
+    </resources>
+</document>

@@ -38,6 +38,14 @@
 		5C4D522D2429E688001AE779 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4D522C2429E688001AE779 /* main.m */; };
 		5C4D52372429E688001AE779 /* PerdoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4D52362429E688001AE779 /* PerdoTests.m */; };
 		5C4D52422429E688001AE779 /* PerdoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4D52412429E688001AE779 /* PerdoUITests.m */; };
+		5C52B5F2242AF87100BE39DA /* RoleChoicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C52B5F0242AF87100BE39DA /* RoleChoicesViewController.m */; };
+		5C52B5F3242AF87100BE39DA /* RoleChoicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C52B5F1242AF87100BE39DA /* RoleChoicesViewController.xib */; };
+		5C52B5F7242B092400BE39DA /* StudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C52B5F5242B092400BE39DA /* StudentViewController.m */; };
+		5C52B5F8242B092400BE39DA /* StudentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C52B5F6242B092400BE39DA /* StudentViewController.xib */; };
+		5C52B5FC242B093600BE39DA /* TeacherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C52B5FA242B093600BE39DA /* TeacherViewController.m */; };
+		5C52B5FD242B093600BE39DA /* TeacherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C52B5FB242B093600BE39DA /* TeacherViewController.xib */; };
+		5C52B603242B0B6600BE39DA /* UIViewController+PDNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C52B600242B0B6600BE39DA /* UIViewController+PDNavigationItem.m */; };
+		5C52B604242B0B6600BE39DA /* UITableViewCell+PDLineSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C52B602242B0B6600BE39DA /* UITableViewCell+PDLineSpace.m */; };
 		7D3AD381AB27F9356A453508 /* Pods_Perdo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F585664F33D16024D59559C /* Pods_Perdo.framework */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +132,19 @@
 		5C4D523D2429E688001AE779 /* PerdoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerdoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4D52412429E688001AE779 /* PerdoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerdoUITests.m; sourceTree = "<group>"; };
 		5C4D52432429E688001AE779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C52B5EF242AF87100BE39DA /* RoleChoicesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoleChoicesViewController.h; sourceTree = "<group>"; };
+		5C52B5F0242AF87100BE39DA /* RoleChoicesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoleChoicesViewController.m; sourceTree = "<group>"; };
+		5C52B5F1242AF87100BE39DA /* RoleChoicesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoleChoicesViewController.xib; sourceTree = "<group>"; };
+		5C52B5F4242B092400BE39DA /* StudentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentViewController.h; sourceTree = "<group>"; };
+		5C52B5F5242B092400BE39DA /* StudentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentViewController.m; sourceTree = "<group>"; };
+		5C52B5F6242B092400BE39DA /* StudentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentViewController.xib; sourceTree = "<group>"; };
+		5C52B5F9242B093600BE39DA /* TeacherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeacherViewController.h; sourceTree = "<group>"; };
+		5C52B5FA242B093600BE39DA /* TeacherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeacherViewController.m; sourceTree = "<group>"; };
+		5C52B5FB242B093600BE39DA /* TeacherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherViewController.xib; sourceTree = "<group>"; };
+		5C52B5FF242B0B6600BE39DA /* UITableViewCell+PDLineSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+PDLineSpace.h"; sourceTree = "<group>"; };
+		5C52B600242B0B6600BE39DA /* UIViewController+PDNavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PDNavigationItem.m"; sourceTree = "<group>"; };
+		5C52B601242B0B6600BE39DA /* UIViewController+PDNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PDNavigationItem.h"; sourceTree = "<group>"; };
+		5C52B602242B0B6600BE39DA /* UITableViewCell+PDLineSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+PDLineSpace.m"; sourceTree = "<group>"; };
 		83077C5A823C3868132D4C1D /* Pods-Perdo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perdo.debug.xcconfig"; path = "Target Support Files/Pods-Perdo/Pods-Perdo.debug.xcconfig"; sourceTree = "<group>"; };
 		A6B42605BDFF777BE77139DE /* Pods-Perdo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perdo.release.xcconfig"; path = "Target Support Files/Pods-Perdo/Pods-Perdo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -201,6 +222,7 @@
 		5C0404942429E8E200C80A68 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				5C52B5FE242B0B6600BE39DA /* Categories */,
 				5C0404D92429EF0100C80A68 /* Extension */,
 			);
 			path = Tools;
@@ -469,6 +491,15 @@
 				5C0405152429FCE400C80A68 /* PhoneLoginViewController.h */,
 				5C0405132429FCE300C80A68 /* PhoneLoginViewController.m */,
 				5C0405142429FCE300C80A68 /* PhoneLoginViewController.xib */,
+				5C52B5EF242AF87100BE39DA /* RoleChoicesViewController.h */,
+				5C52B5F0242AF87100BE39DA /* RoleChoicesViewController.m */,
+				5C52B5F1242AF87100BE39DA /* RoleChoicesViewController.xib */,
+				5C52B5F4242B092400BE39DA /* StudentViewController.h */,
+				5C52B5F5242B092400BE39DA /* StudentViewController.m */,
+				5C52B5F6242B092400BE39DA /* StudentViewController.xib */,
+				5C52B5F9242B093600BE39DA /* TeacherViewController.h */,
+				5C52B5FA242B093600BE39DA /* TeacherViewController.m */,
+				5C52B5FB242B093600BE39DA /* TeacherViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -561,6 +592,17 @@
 				5C4D52432429E688001AE779 /* Info.plist */,
 			);
 			path = PerdoUITests;
+			sourceTree = "<group>";
+		};
+		5C52B5FE242B0B6600BE39DA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5C52B601242B0B6600BE39DA /* UIViewController+PDNavigationItem.h */,
+				5C52B600242B0B6600BE39DA /* UIViewController+PDNavigationItem.m */,
+				5C52B5FF242B0B6600BE39DA /* UITableViewCell+PDLineSpace.h */,
+				5C52B602242B0B6600BE39DA /* UITableViewCell+PDLineSpace.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -670,6 +712,9 @@
 			files = (
 				5C0404A22429EDDA00C80A68 /* perdo_Info.plist in Resources */,
 				5C4D522A2429E688001AE779 /* LaunchScreen.storyboard in Resources */,
+				5C52B5F8242B092400BE39DA /* StudentViewController.xib in Resources */,
+				5C52B5F3242AF87100BE39DA /* RoleChoicesViewController.xib in Resources */,
+				5C52B5FD242B093600BE39DA /* TeacherViewController.xib in Resources */,
 				5C4D52272429E688001AE779 /* Assets.xcassets in Resources */,
 				5C0405172429FCE400C80A68 /* PhoneLoginViewController.xib in Resources */,
 			);
@@ -743,6 +788,7 @@
 				5C0405022429EF0100C80A68 /* UINavigationBar+Awesome.m in Sources */,
 				5C0405062429EF0100C80A68 /* UIView+SNFoundation.m in Sources */,
 				5C04051F2429FDFE00C80A68 /* AuthCodeView.m in Sources */,
+				5C52B603242B0B6600BE39DA /* UIViewController+PDNavigationItem.m in Sources */,
 				5C0404CE2429EEB500C80A68 /* ExerciseViewController.m in Sources */,
 				5C0405052429EF0100C80A68 /* NSArray+CheckSP.m in Sources */,
 				5C0405012429EF0100C80A68 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
@@ -751,17 +797,21 @@
 				5C0404CD2429EEB500C80A68 /* ClassViewController.m in Sources */,
 				5C0404FD2429EF0100C80A68 /* BEEGIFImageSerialization.m in Sources */,
 				5C0404D12429EEB500C80A68 /* MailListViewController.m in Sources */,
+				5C52B5FC242B093600BE39DA /* TeacherViewController.m in Sources */,
 				5C0405162429FCE400C80A68 /* PhoneLoginViewController.m in Sources */,
 				5C0405082429EF0100C80A68 /* NSObject+AssociatedDictionary.m in Sources */,
 				5C0404AD2429EE9B00C80A68 /* MainNavController.m in Sources */,
 				5C0405092429EF0100C80A68 /* ObjcAssociatedObjectHelpers.m in Sources */,
 				5C0404AE2429EE9B00C80A68 /* MainTabBarController.m in Sources */,
 				5C0404D82429EEE100C80A68 /* APPHelper.m in Sources */,
+				5C52B5F2242AF87100BE39DA /* RoleChoicesViewController.m in Sources */,
 				5C0404FC2429EF0100C80A68 /* UIImage+Compress.m in Sources */,
 				5C4D522D2429E688001AE779 /* main.m in Sources */,
 				5C04051E2429FDFE00C80A68 /* ProtocolLabel.m in Sources */,
 				5C0404D02429EEB500C80A68 /* MineViewController.m in Sources */,
+				5C52B5F7242B092400BE39DA /* StudentViewController.m in Sources */,
 				5C0405002429EF0100C80A68 /* UIImageView+CornerRadius.m in Sources */,
+				5C52B604242B0B6600BE39DA /* UITableViewCell+PDLineSpace.m in Sources */,
 				5C0405122429FC6500C80A68 /* MemberInfoModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

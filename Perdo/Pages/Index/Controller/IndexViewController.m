@@ -8,9 +8,6 @@
 
 #import "IndexViewController.h"
 
-#import "UINavigationController+FDFullscreenPopGesture.h"
-
-
 @interface IndexViewController ()
 
 @end
@@ -30,7 +27,7 @@
            @strongify(self);
 //            [self getFirstData];
        }];
-//    JudgeIsLogin;
+    JudgeIsLogin;
 }
 
 /*
