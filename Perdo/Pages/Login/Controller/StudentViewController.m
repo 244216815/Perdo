@@ -19,7 +19,17 @@
     // Do any additional setup after loading the view from its nib.
     
     self.title = @"完善基础信息";
+    
+    [self configNotification];
 
+}
+
+- (void)configNotification{
+    @weakify(self);
+    [[[[NSNotificationCenter defaultCenter] rac_addObserverForName:NSNotification_LoginSuccess object:nil] takeUntil:self.rac_willDeallocSignal] subscribeNext:^(NSNotification * _Nullable x) {
+        @strongify(self);
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }];
 }
 
 /*

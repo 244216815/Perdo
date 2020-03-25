@@ -35,6 +35,7 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *logoBottomMargin;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *thirdBtnBottomMargin;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topLayputMargin;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *RemindbottomLayoutMargin;
 
 @end
 
@@ -67,8 +68,9 @@
 - (void)createBaseView{
     self.topLayputMargin.constant = kStatusBarHeight == 20?96:120;
     self.closeBtnTopMargin.constant = kStatusBarHeight +15;
-    self.logoBottomMargin.constant = kScreenHeight<667?40:60;
+    self.logoBottomMargin.constant = kStatusBarHeight == 20?40:60;
     self.thirdBtnBottomMargin.constant = kScreenHeight<667?20:44;
+    self.RemindbottomLayoutMargin.constant =  kStatusBarHeight == 20?16:50;
     [self bindingSignal];
     @weakify(self);
     self.protocolBottomLabel.ProtocolTapBlock = ^(int index){

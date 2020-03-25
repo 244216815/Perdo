@@ -19,6 +19,8 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = UIColorHex(33ccee);
+    
+     self.title = @"通讯录";
 
 }
 

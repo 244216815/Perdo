@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColorHex(33ee00);
 
+     self.title = @"练习";
 }
 
 /*

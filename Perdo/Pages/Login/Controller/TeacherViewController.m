@@ -28,6 +28,15 @@
     self.title = @"完善基础信息";
     self.sureBtn.enabled = NO;
     
+    [self configNotification];
+}
+
+- (void)configNotification{
+    @weakify(self);
+    [[[[NSNotificationCenter defaultCenter] rac_addObserverForName:NSNotification_LoginSuccess object:nil] takeUntil:self.rac_willDeallocSignal] subscribeNext:^(NSNotification * _Nullable x) {
+        @strongify(self);
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }];
 }
 
 - (IBAction)teacherAction1:(id)sender {
@@ -57,8 +66,10 @@
 }
 - (IBAction)sureAction:(id)sender {
     
-    IndexViewController *vc = [[IndexViewController alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
+     [[NSNotificationCenter defaultCenter]postNotificationName:NSNotification_LoginSuccess object:nil];
+    
+//    IndexViewController *vc = [[IndexViewController alloc]init];
+//    [self.navigationController pushViewController:vc animated:YES];
     
 }
 

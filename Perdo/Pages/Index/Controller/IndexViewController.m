@@ -19,8 +19,9 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = UIColorHex(ee5200);
-   self.fd_prefersNavigationBarHidden = YES;
+//   self.fd_prefersNavigationBarHidden = YES;
 
+    self.title = @"首页";
     
     @weakify(self);
     [[[[NSNotificationCenter defaultCenter] rac_addObserverForName:NSNotification_LogoutSuccess object:nil] takeUntil:self.rac_willDeallocSignal] subscribeNext:^(NSNotification * _Nullable x) {

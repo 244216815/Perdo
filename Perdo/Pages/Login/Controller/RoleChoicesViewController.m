@@ -22,8 +22,19 @@
     // Do any additional setup after loading the view from its nib.
     
     self.fd_prefersNavigationBarHidden = YES;
+    
+    [self configNotification];
 
 }
+
+- (void)configNotification{
+    @weakify(self);
+    [[[[NSNotificationCenter defaultCenter] rac_addObserverForName:NSNotification_LoginSuccess object:nil] takeUntil:self.rac_willDeallocSignal] subscribeNext:^(NSNotification * _Nullable x) {
+        @strongify(self);
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }];
+}
+
 - (IBAction)studentAction:(id)sender {
     StudentViewController *vc = [[StudentViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];

@@ -7,6 +7,7 @@
 //
 
 #import "MineViewController.h"
+#import "PhoneLoginViewController.h"
 
 @interface MineViewController ()
 
@@ -19,7 +20,23 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = UIColorHex(ffffee);
+    
+    self.fd_prefersNavigationBarHidden = YES;
+    
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(clickBtn) forControlEvents:UIControlEventTouchUpInside];
 
+
+}
+
+
+-(void)clickBtn{
+    PhoneLoginViewController *vc = [[PhoneLoginViewController alloc]init];
+    [self.navigationController presentViewController:vc animated:YES completion:nil];
+//    [self presentLoginVc];
 }
 
 /*

@@ -18,6 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.title = @"班级";
+    
     self.view.backgroundColor = UIColorHex(005200);
 }
 

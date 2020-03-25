@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhoneLoginViewController">
             <connections>
+                <outlet property="RemindbottomLayoutMargin" destination="Qcz-xj-aZ4" id="JSY-Xd-SKS"/>
                 <outlet property="authCodeView" destination="0D9-79-LRL" id="9EA-3m-xxU"/>
                 <outlet property="btnLogin" destination="Zae-Kf-Q1z" id="PDd-ex-Rug"/>
                 <outlet property="protocolBottomLabel" destination="9ti-35-5QL" id="7wR-D1-hFA"/>
