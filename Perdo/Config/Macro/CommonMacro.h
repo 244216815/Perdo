@@ -35,6 +35,7 @@ static inline NSString *StringFromObject(id object) {
     }
 }
 
+
 //通用
 #define BEEAppDelegate  [UIApplication sharedApplication].delegate
 

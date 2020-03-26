@@ -10,7 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSUInteger,RoleType){
+    RoleTypeStudent = 1,
+    RoleTypeTeacher = 2
+};
+
+
 @interface APPHelper : NSObject
+
 
 #pragma mark --DateFormatters
 @property(strong,nonatomic)  NSDateFormatter * dateFormatter_typeOne;//yyyy-MM-dd HH:mm

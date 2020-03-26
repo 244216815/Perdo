@@ -46,6 +46,7 @@
 		5C52B5FD242B093600BE39DA /* TeacherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C52B5FB242B093600BE39DA /* TeacherViewController.xib */; };
 		5C52B603242B0B6600BE39DA /* UIViewController+PDNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C52B600242B0B6600BE39DA /* UIViewController+PDNavigationItem.m */; };
 		5C52B604242B0B6600BE39DA /* UITableViewCell+PDLineSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C52B602242B0B6600BE39DA /* UITableViewCell+PDLineSpace.m */; };
+		5C52B60B242C992700BE39DA /* IndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C52B60A242C992700BE39DA /* IndexViewController.xib */; };
 		7D3AD381AB27F9356A453508 /* Pods_Perdo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F585664F33D16024D59559C /* Pods_Perdo.framework */; };
 /* End PBXBuildFile section */
 
@@ -145,6 +146,7 @@
 		5C52B600242B0B6600BE39DA /* UIViewController+PDNavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PDNavigationItem.m"; sourceTree = "<group>"; };
 		5C52B601242B0B6600BE39DA /* UIViewController+PDNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PDNavigationItem.h"; sourceTree = "<group>"; };
 		5C52B602242B0B6600BE39DA /* UITableViewCell+PDLineSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+PDLineSpace.m"; sourceTree = "<group>"; };
+		5C52B60A242C992700BE39DA /* IndexViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndexViewController.xib; sourceTree = "<group>"; };
 		83077C5A823C3868132D4C1D /* Pods-Perdo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perdo.debug.xcconfig"; path = "Target Support Files/Pods-Perdo/Pods-Perdo.debug.xcconfig"; sourceTree = "<group>"; };
 		A6B42605BDFF777BE77139DE /* Pods-Perdo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perdo.release.xcconfig"; path = "Target Support Files/Pods-Perdo/Pods-Perdo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -328,6 +330,7 @@
 			children = (
 				5C0404BD2429EEB500C80A68 /* IndexViewController.h */,
 				5C0404BE2429EEB500C80A68 /* IndexViewController.m */,
+				5C52B60A242C992700BE39DA /* IndexViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -710,6 +713,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C52B60B242C992700BE39DA /* IndexViewController.xib in Resources */,
 				5C0404A22429EDDA00C80A68 /* perdo_Info.plist in Resources */,
 				5C4D522A2429E688001AE779 /* LaunchScreen.storyboard in Resources */,
 				5C52B5F8242B092400BE39DA /* StudentViewController.xib in Resources */,
