@@ -19,7 +19,7 @@
 @implementation UIViewController (AddCommenNotify)
 
 +(BOOL)isCurrentViewControllerVisible:(UIViewController *)viewController{
-    return  viewController == [self findCurrentShowViewControllerFromViewController:BEEAppDelegate.window.rootViewController];
+    return  viewController == [self findCurrentShowViewControllerFromViewController:PDAppDelegate.window.rootViewController];
 }
 
 + (UIViewController *)findCurrentShowViewControllerFromViewController:(UIViewController *)fromVC{

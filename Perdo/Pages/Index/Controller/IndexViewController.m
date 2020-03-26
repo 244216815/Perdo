@@ -7,6 +7,8 @@
 //
 
 #import "IndexViewController.h"
+#import "IndexAddTeacherView.h"
+#import "IndexAddStudentView.h"
 
 @interface IndexViewController ()
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewLayout;
@@ -66,6 +68,37 @@
 
 
 - (void)addAction{
+    if (RoleTypeTeacher) {
+//        IndexAddTeacherView *addTeacherView = [[NSBundle mainBundle]loadNibNamed:@"IndexAddTeacherView" owner:self options:nil].lastObject;
+//        addTeacherView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+//        [addTeacherView setAddActionBlock:^(NSInteger index) {
+//            if (index == 1) {
+//                //创建群聊
+//            }else if (index == 2){
+//                //加入学校/班级
+//            }else if (index == 3){
+//                //创建年级/班级
+//
+//            }
+//        }];
+//        [PDAppDelegate.window addSubview:addTeacherView];
+        
+    }
+    
+    if (RoleTypeStudent) {
+       
+        IndexAddStudentView *addStudentView = [[NSBundle mainBundle]loadNibNamed:@"IndexAddStudentView" owner:self options:nil].lastObject;
+        addStudentView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        [addStudentView setAddActionBlock:^(NSInteger index) {
+            if (index == 1) {
+                //创建群聊
+            }else if (index == 2){
+                //关联学生
+
+            }
+        }];
+        [PDAppDelegate.window addSubview:addStudentView];
+    }
     
 }
 

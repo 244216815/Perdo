@@ -32,6 +32,10 @@
 		5C0405172429FCE400C80A68 /* PhoneLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0405142429FCE300C80A68 /* PhoneLoginViewController.xib */; };
 		5C04051E2429FDFE00C80A68 /* ProtocolLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0405192429FDFD00C80A68 /* ProtocolLabel.m */; };
 		5C04051F2429FDFE00C80A68 /* AuthCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C04051D2429FDFE00C80A68 /* AuthCodeView.m */; };
+		5C17A24D242CA82600D9F029 /* IndexAddStudentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C17A24C242CA82600D9F029 /* IndexAddStudentView.m */; };
+		5C17A24F242CA84700D9F029 /* IndexAddStudentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C17A24E242CA84700D9F029 /* IndexAddStudentView.xib */; };
+		5C17A252242CA86600D9F029 /* IndexAddTeacherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C17A251242CA86600D9F029 /* IndexAddTeacherView.m */; };
+		5C17A254242CA87000D9F029 /* IndexAddTeacherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C17A253242CA87000D9F029 /* IndexAddTeacherView.xib */; };
 		5C4D521C2429E686001AE779 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4D521B2429E686001AE779 /* AppDelegate.m */; };
 		5C4D52272429E688001AE779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C4D52262429E688001AE779 /* Assets.xcassets */; };
 		5C4D522A2429E688001AE779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4D52282429E688001AE779 /* LaunchScreen.storyboard */; };
@@ -121,6 +125,12 @@
 		5C04051A2429FDFD00C80A68 /* ProtocolLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolLabel.h; sourceTree = "<group>"; };
 		5C04051C2429FDFE00C80A68 /* AuthCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthCodeView.h; sourceTree = "<group>"; };
 		5C04051D2429FDFE00C80A68 /* AuthCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthCodeView.m; sourceTree = "<group>"; };
+		5C17A24B242CA82600D9F029 /* IndexAddStudentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexAddStudentView.h; sourceTree = "<group>"; };
+		5C17A24C242CA82600D9F029 /* IndexAddStudentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexAddStudentView.m; sourceTree = "<group>"; };
+		5C17A24E242CA84700D9F029 /* IndexAddStudentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndexAddStudentView.xib; sourceTree = "<group>"; };
+		5C17A250242CA86600D9F029 /* IndexAddTeacherView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexAddTeacherView.h; sourceTree = "<group>"; };
+		5C17A251242CA86600D9F029 /* IndexAddTeacherView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexAddTeacherView.m; sourceTree = "<group>"; };
+		5C17A253242CA87000D9F029 /* IndexAddTeacherView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndexAddTeacherView.xib; sourceTree = "<group>"; };
 		5C4D52172429E686001AE779 /* Perdo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Perdo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4D521A2429E686001AE779 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C4D521B2429E686001AE779 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -345,6 +355,12 @@
 		5C0404C02429EEB500C80A68 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5C17A24B242CA82600D9F029 /* IndexAddStudentView.h */,
+				5C17A24C242CA82600D9F029 /* IndexAddStudentView.m */,
+				5C17A24E242CA84700D9F029 /* IndexAddStudentView.xib */,
+				5C17A250242CA86600D9F029 /* IndexAddTeacherView.h */,
+				5C17A251242CA86600D9F029 /* IndexAddTeacherView.m */,
+				5C17A253242CA87000D9F029 /* IndexAddTeacherView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -713,7 +729,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C17A254242CA87000D9F029 /* IndexAddTeacherView.xib in Resources */,
 				5C52B60B242C992700BE39DA /* IndexViewController.xib in Resources */,
+				5C17A24F242CA84700D9F029 /* IndexAddStudentView.xib in Resources */,
 				5C0404A22429EDDA00C80A68 /* perdo_Info.plist in Resources */,
 				5C4D522A2429E688001AE779 /* LaunchScreen.storyboard in Resources */,
 				5C52B5F8242B092400BE39DA /* StudentViewController.xib in Resources */,
@@ -795,8 +813,10 @@
 				5C52B603242B0B6600BE39DA /* UIViewController+PDNavigationItem.m in Sources */,
 				5C0404CE2429EEB500C80A68 /* ExerciseViewController.m in Sources */,
 				5C0405052429EF0100C80A68 /* NSArray+CheckSP.m in Sources */,
+				5C17A252242CA86600D9F029 /* IndexAddTeacherView.m in Sources */,
 				5C0405012429EF0100C80A68 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				5C0404CF2429EEB500C80A68 /* IndexViewController.m in Sources */,
+				5C17A24D242CA82600D9F029 /* IndexAddStudentView.m in Sources */,
 				5C4D521C2429E686001AE779 /* AppDelegate.m in Sources */,
 				5C0404CD2429EEB500C80A68 /* ClassViewController.m in Sources */,
 				5C0404FD2429EF0100C80A68 /* BEEGIFImageSerialization.m in Sources */,
