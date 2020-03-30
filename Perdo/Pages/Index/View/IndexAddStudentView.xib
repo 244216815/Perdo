@@ -15,7 +15,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NfN-RN-0yK">
-                    <rect key="frame" x="67.5" y="228.5" width="240" height="210"/>
+                    <rect key="frame" x="67.5" y="236.5" width="240" height="194"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="index_add_icon" translatesAutoresizingMaskIntoConstraints="NO" id="5VM-hl-Bcm">
                             <rect key="frame" x="0.0" y="0.0" width="240" height="90"/>
@@ -24,7 +24,7 @@
                             </constraints>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpR-yp-o31">
-                            <rect key="frame" x="0.0" y="106" width="240" height="36"/>
+                            <rect key="frame" x="0.0" y="90" width="240" height="36"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创建群聊" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usM-0L-xeI">
                                     <rect key="frame" x="0.0" y="0.0" width="240" height="37"/>
@@ -63,7 +63,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6cH-Vr-iSm">
-                            <rect key="frame" x="0.0" y="142" width="240" height="36"/>
+                            <rect key="frame" x="0.0" y="126" width="240" height="36"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加入班级/学校" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZz-Zh-wcL">
                                     <rect key="frame" x="0.0" y="0.0" width="240" height="37"/>
@@ -102,7 +102,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2o-2U-XYt">
-                            <rect key="frame" x="0.0" y="178" width="240" height="36"/>
+                            <rect key="frame" x="0.0" y="162" width="240" height="36"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="取消" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgX-48-ttk">
                                     <rect key="frame" x="0.0" y="0.0" width="240" height="37"/>
@@ -138,13 +138,13 @@
                         <constraint firstItem="G2o-2U-XYt" firstAttribute="leading" secondItem="NfN-RN-0yK" secondAttribute="leading" id="G57-bA-Nld"/>
                         <constraint firstItem="5VM-hl-Bcm" firstAttribute="top" secondItem="NfN-RN-0yK" secondAttribute="top" id="KyW-06-rRh"/>
                         <constraint firstItem="5VM-hl-Bcm" firstAttribute="leading" secondItem="NfN-RN-0yK" secondAttribute="leading" id="MMT-At-a04"/>
-                        <constraint firstItem="kpR-yp-o31" firstAttribute="top" secondItem="5VM-hl-Bcm" secondAttribute="bottom" constant="16" id="RGO-Aq-Knj"/>
+                        <constraint firstItem="kpR-yp-o31" firstAttribute="top" secondItem="5VM-hl-Bcm" secondAttribute="bottom" id="RGO-Aq-Knj"/>
                         <constraint firstItem="kpR-yp-o31" firstAttribute="leading" secondItem="NfN-RN-0yK" secondAttribute="leading" id="SpZ-RO-7hw"/>
                         <constraint firstItem="G2o-2U-XYt" firstAttribute="top" secondItem="6cH-Vr-iSm" secondAttribute="bottom" id="U9O-c0-6Pd"/>
                         <constraint firstAttribute="trailing" secondItem="G2o-2U-XYt" secondAttribute="trailing" id="adZ-K4-iJa"/>
                         <constraint firstAttribute="trailing" secondItem="6cH-Vr-iSm" secondAttribute="trailing" id="dRv-0n-Y7R"/>
                         <constraint firstAttribute="trailing" secondItem="5VM-hl-Bcm" secondAttribute="trailing" id="fjj-HE-ZSO"/>
-                        <constraint firstAttribute="width" secondItem="NfN-RN-0yK" secondAttribute="height" multiplier="24:21" id="yi1-l6-fld"/>
+                        <constraint firstAttribute="width" secondItem="NfN-RN-0yK" secondAttribute="height" multiplier="240:194" id="yi1-l6-fld"/>
                         <constraint firstAttribute="trailing" secondItem="kpR-yp-o31" secondAttribute="trailing" id="zbw-c8-eNG"/>
                     </constraints>
                 </view>
@@ -152,7 +152,6 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="NfN-RN-0yK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dhB-cP-4zO"/>
-                <constraint firstItem="NfN-RN-0yK" firstAttribute="width" secondItem="NfN-RN-0yK" secondAttribute="height" multiplier="24:21" id="l6i-vg-72X"/>
                 <constraint firstItem="NfN-RN-0yK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="trH-JL-m3x"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

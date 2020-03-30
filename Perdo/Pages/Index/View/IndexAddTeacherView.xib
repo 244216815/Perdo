@@ -15,7 +15,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WbO-k3-fgw">
-                    <rect key="frame" x="67.5" y="208.5" width="240" height="250"/>
+                    <rect key="frame" x="67.5" y="216.5" width="240" height="234"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="index_add_icon" translatesAutoresizingMaskIntoConstraints="NO" id="3Xd-AD-TKt">
                             <rect key="frame" x="0.0" y="0.0" width="240" height="90"/>
@@ -24,7 +24,7 @@
                             </constraints>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96L-An-hg9">
-                            <rect key="frame" x="0.0" y="106" width="240" height="36"/>
+                            <rect key="frame" x="0.0" y="90" width="240" height="36"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创建群聊" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZE0-yR-bYy">
                                     <rect key="frame" x="0.0" y="0.0" width="240" height="37"/>
@@ -63,7 +63,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmH-82-GPC">
-                            <rect key="frame" x="0.0" y="142" width="240" height="36"/>
+                            <rect key="frame" x="0.0" y="126" width="240" height="36"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加入班级/学校" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSn-bS-Y9z">
                                     <rect key="frame" x="0.0" y="0.0" width="240" height="37"/>
@@ -102,7 +102,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34F-zc-hI8">
-                            <rect key="frame" x="0.0" y="178" width="240" height="36"/>
+                            <rect key="frame" x="0.0" y="162" width="240" height="36"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创建年级/班级" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wk1-oa-Hdy">
                                     <rect key="frame" x="0.0" y="0.0" width="240" height="37"/>
@@ -141,7 +141,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v0n-LJ-PaK">
-                            <rect key="frame" x="0.0" y="214" width="240" height="36"/>
+                            <rect key="frame" x="0.0" y="198" width="240" height="36"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="取消" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyD-tW-zl4">
                                     <rect key="frame" x="0.0" y="0.0" width="240" height="37"/>
@@ -182,13 +182,13 @@
                         <constraint firstAttribute="trailing" secondItem="vmH-82-GPC" secondAttribute="trailing" id="SOg-ZM-FEH"/>
                         <constraint firstAttribute="trailing" secondItem="v0n-LJ-PaK" secondAttribute="trailing" id="W6Z-UK-yeL"/>
                         <constraint firstItem="34F-zc-hI8" firstAttribute="leading" secondItem="WbO-k3-fgw" secondAttribute="leading" id="WKK-v5-zsw"/>
-                        <constraint firstItem="96L-An-hg9" firstAttribute="top" secondItem="3Xd-AD-TKt" secondAttribute="bottom" constant="16" id="ZXc-2S-VbJ"/>
+                        <constraint firstItem="96L-An-hg9" firstAttribute="top" secondItem="3Xd-AD-TKt" secondAttribute="bottom" id="ZXc-2S-VbJ"/>
                         <constraint firstItem="34F-zc-hI8" firstAttribute="top" secondItem="vmH-82-GPC" secondAttribute="bottom" id="bl1-GF-3SM"/>
                         <constraint firstItem="3Xd-AD-TKt" firstAttribute="leading" secondItem="WbO-k3-fgw" secondAttribute="leading" id="c0O-zH-2ST"/>
                         <constraint firstItem="v0n-LJ-PaK" firstAttribute="top" secondItem="34F-zc-hI8" secondAttribute="bottom" id="eiJ-fO-PbV"/>
                         <constraint firstItem="3Xd-AD-TKt" firstAttribute="top" secondItem="WbO-k3-fgw" secondAttribute="top" id="gXG-WX-AgK"/>
                         <constraint firstItem="v0n-LJ-PaK" firstAttribute="leading" secondItem="WbO-k3-fgw" secondAttribute="leading" id="gjg-IA-kuP"/>
-                        <constraint firstAttribute="width" secondItem="WbO-k3-fgw" secondAttribute="height" multiplier="24:25" id="r9q-mw-Xe3"/>
+                        <constraint firstAttribute="width" secondItem="WbO-k3-fgw" secondAttribute="height" multiplier="240:234" id="r9q-mw-Xe3"/>
                         <constraint firstAttribute="bottom" secondItem="v0n-LJ-PaK" secondAttribute="bottom" id="yeu-fX-cx5"/>
                         <constraint firstItem="96L-An-hg9" firstAttribute="leading" secondItem="WbO-k3-fgw" secondAttribute="leading" id="zMy-ae-x1e"/>
                     </constraints>

@@ -107,7 +107,7 @@ if (!MemberInfoModel.isLogin) {\
     return;\
 }
 
-#define ChangeTap(index) [(UITabBarController *)BEEAppDelegate.window.rootViewController setSelectedIndex:index]
+#define ChangeTap(index) [(UITabBarController *)PDAppDelegate.window.rootViewController setSelectedIndex:index]
 
 
 #define checkIsNsNull(str) ([str isKindOfClass:[NSNull class]]||([str isKindOfClass:[NSString class]]&&[str isEqualToString:@""])?nil:str)
