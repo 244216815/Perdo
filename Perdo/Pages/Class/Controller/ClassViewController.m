@@ -42,13 +42,26 @@
 //      [self.segmentView setSelectedIndex:self.selectIndex animated:YES];
 }
 
+- (void)configNotification{
+    @weakify(self);
+    [[[[NSNotificationCenter defaultCenter] rac_addObserverForName:NSNotification_LoginSuccess object:nil] takeUntil:self.rac_willDeallocSignal] subscribeNext:^(NSNotification * _Nullable x) {
+        @strongify(self);
+//        [self dismissViewControllerAnimated:YES completion:nil];
+        
+    }];
+}
+
 - (void)buildUI{
     self.title = @"班级";
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = UIColorHex(f5f5f5);
-    
-    [self.view addSubview:self.topView];
-    [self buildTopView];
+  
+//    if (RoleTypeTeacher) {
+//    @"class_info"
+        [self configNavigationWitImageName:[NSArray arrayWithObject:[UIImage imageNamed:@"class_set"]] action:@selector(setAction) type:NavigationItemTypeRight];
+        [self.view addSubview:self.topView];
+        [self buildTopView];
+//    }
     [self configChildVcs];
     [self.view addSubview:self.segmentView];
     [self.view addSubview:self.scrollContentView];
@@ -60,7 +73,6 @@
     [self.topView addSubview:self.scaleLabel];
     [self.topView addSubview:self.countLabel];
     [self.topView addSubview:self.attendanceLabel];
-    
     NSArray *nameArray = @[@"人数比例",@"缺勤人数",@"出勤率"];
     for (int i = 0; i<3; i++) {
         UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(16+ (SCREEN_WIDTH-32)/3*i, 111, (SCREEN_WIDTH-32)/3, 17)];
@@ -80,19 +92,39 @@
     [self.topView addSubview:countBtn];
 }
 
+- (void)setAction{
+    //
+    
+    CustomAlertThreeView *classTeacherView = [[NSBundle mainBundle]loadNibNamed:@"CustomAlertThreeView" owner:self options:nil].lastObject;
+    classTeacherView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+    [classTeacherView configLabelTextOne:@"新增班级风采/荣誉" textTwo:@"班级荣誉统计"];
+    [classTeacherView setAddActionBlock:^(NSInteger index) {
+        if (index == 1) {
+            //新增班级风采/荣誉
+        }else if (index == 2){
+            //班级荣誉统计
+
+        }
+    }];
+    [PDAppDelegate.window addSubview:classTeacherView];
+}
+
 
 #pragma mark privateFunc
 - (void)configChildVcs{
     //，1=风采，2=荣誉
     NSArray *types = @[@(1),@(2)];
+//    NSInteger count = RoleTypeTeacher?(self.categorys.count-1):self.categorys.count;
     for (int i = 0; i<self.categorys.count-1; i++) {
         HonorViewController *honorVc = [HonorViewController new];
         honorVc.type =  [types[i] stringValue];
         [self addChildViewController:honorVc];
     }
-    
-    NameListViewController *nameListVc = [NameListViewController new];
-    [self addChildViewController:nameListVc];
+//    if (RoleTypeTeacher) {
+        NameListViewController *nameListVc = [NameListViewController new];
+        [self addChildViewController:nameListVc];
+//    }
+   
 }
 #pragma mark - TopView-
 
@@ -108,17 +140,17 @@
     if (!_nameButton) {
         _nameButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_nameButton setFrame:CGRectMake(0, 0, SCREEN_WIDTH, 46)];
-        [_nameButton setTitleColor:UIColorHex(4s4e4d) forState:UIControlStateNormal];
+        [_nameButton setTitleColor:UIColorHex(4c4e4d) forState:UIControlStateNormal];
         [_nameButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
         [_nameButton setTitle:@"一年级(实验班)" forState:UIControlStateNormal];
-        [_nameButton setImage:[UIImage imageNamed:@"down_icon"] forState:UIControlStateNormal];
-        [_nameButton setTitleEdgeInsets:UIEdgeInsetsMake(0, -_nameButton.imageView.image.size.width, 0, _nameButton.imageView.image.size.width)];
-        [_nameButton setImageEdgeInsets:UIEdgeInsetsMake(0, _nameButton.titleLabel.bounds.size.width, 0, -_nameButton.titleLabel.bounds.size.width)];
-        [[_nameButton rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+//        [_nameButton setImage:[UIImage imageNamed:@"down_icon"] forState:UIControlStateNormal];
+//        [_nameButton setTitleEdgeInsets:UIEdgeInsetsMake(0, -_nameButton.imageView.image.size.width, 0, _nameButton.imageView.image.size.width)];
+//        [_nameButton setImageEdgeInsets:UIEdgeInsetsMake(0, _nameButton.titleLabel.bounds.size.width, 0, -_nameButton.titleLabel.bounds.size.width)];
+//        [[_nameButton rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
                  //跳转到
 //            ChangeTap(2);
 //            [self.navigationController popViewControllerAnimated:YES];
-        }];
+//        }];
     }
     return _nameButton;
 }
@@ -179,7 +211,9 @@
         style.autoAdjustTitlesWidth = YES;
         style.titleFont = [UIFont fontWithName:@"PingFangSC-Light" size:14];
         @weakify(self);
-        _segmentView = [[ZJScrollSegmentView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.topView.frame)+16, kScreenWidth, 44) segmentStyle:style delegate:self titles:self.categorys titleDidClick:^(ZJTitleView *titleView, NSInteger index) {
+         NSInteger topHeight = RoleTypeTeacher? CGRectGetMaxY(self.topView.frame)+16:kNavBarHeight;
+        topHeight = CGRectGetMaxY(self.topView.frame)+16;
+        _segmentView = [[ZJScrollSegmentView alloc] initWithFrame:CGRectMake(0, topHeight, kScreenWidth, 44) segmentStyle:style delegate:self titles:self.categorys titleDidClick:^(ZJTitleView *titleView, NSInteger index) {
             @strongify(self);
             [self.scrollContentView setContentOffSet:CGPointMake(self.scrollContentView.bounds.size.width * index, 0.0) animated:YES];
         }];
@@ -191,6 +225,8 @@
 
 - (NSArray *)categorys{
     if (!_categorys) {
+        
+//        _categorys = RoleTypeTeacher?@[@"风采",@"荣誉",@"名单"]:@[@"风采",@"荣誉"];
         _categorys = @[@"风采",@"荣誉",@"名单"];
     }
     return _categorys;
@@ -198,7 +234,9 @@
 
 - (ZJContentView *)scrollContentView{
     if (!_scrollContentView) {
-        _scrollContentView = [[ZJContentView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.segmentView.frame), kScreenWidth, kScreenHeight - kNavBarHeight-172-kTabBarHeight-44) segmentView:self.segmentView parentViewController:self delegate:self];
+        NSInteger height = RoleTypeTeacher?(kScreenHeight - kNavBarHeight-172-kTabBarHeight-44):(kScreenHeight - kNavBarHeight-kTabBarHeight-44);
+        height = kScreenHeight - kNavBarHeight-172-kTabBarHeight-44;
+        _scrollContentView = [[ZJContentView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.segmentView.frame), kScreenWidth, height) segmentView:self.segmentView parentViewController:self delegate:self];
         _scrollContentView.backgroundColor = UIColorHex(ffffff);
     }
     return _scrollContentView;

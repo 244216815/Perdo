@@ -10,10 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface IndexAddTeacherView : UIView
+@interface CustomAlertFourView : UIView
 
 @property (weak, nonatomic) IBOutlet UIView *teacherView;
+@property (weak, nonatomic) IBOutlet UILabel *label1;
+@property (weak, nonatomic) IBOutlet UILabel *label2;
+@property (weak, nonatomic) IBOutlet UILabel *label3;
 
+-(void)configLabelTextOne:(NSString *)textOne textTwo:(NSString *)textTwo texThree:(NSString *)textThree;
 @property (nonatomic, copy) void(^addActionBlock)(NSInteger index);
 
 @end

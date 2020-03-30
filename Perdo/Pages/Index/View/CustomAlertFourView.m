@@ -6,14 +6,14 @@
 //  Copyright © 2020 Perdo. All rights reserved.
 //
 
-#import "IndexAddTeacherView.h"
+#import "CustomAlertFourView.h"
 
-@interface IndexAddTeacherView ()
+@interface CustomAlertFourView ()
 
 
 @end
 
-@implementation IndexAddTeacherView
+@implementation CustomAlertFourView
 
 -(void)awakeFromNib{
     [super awakeFromNib];
@@ -22,6 +22,12 @@
     
      self.teacherView.layer.cornerRadius = 8;
     
+}
+
+-(void)configLabelTextOne:(NSString *)textOne textTwo:(NSString *)textTwo texThree:(NSString *)textThree{
+    self.label1.text = textOne;
+    self.label2.text = textTwo;
+    self.label3.text = textThree;
 }
 
 - (IBAction)btnAction:(UIButton *)sender {

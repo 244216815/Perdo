@@ -32,10 +32,10 @@
 		5C0405172429FCE400C80A68 /* PhoneLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0405142429FCE300C80A68 /* PhoneLoginViewController.xib */; };
 		5C04051E2429FDFE00C80A68 /* ProtocolLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0405192429FDFD00C80A68 /* ProtocolLabel.m */; };
 		5C04051F2429FDFE00C80A68 /* AuthCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C04051D2429FDFE00C80A68 /* AuthCodeView.m */; };
-		5C17A24D242CA82600D9F029 /* IndexAddStudentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C17A24C242CA82600D9F029 /* IndexAddStudentView.m */; };
-		5C17A24F242CA84700D9F029 /* IndexAddStudentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C17A24E242CA84700D9F029 /* IndexAddStudentView.xib */; };
-		5C17A252242CA86600D9F029 /* IndexAddTeacherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C17A251242CA86600D9F029 /* IndexAddTeacherView.m */; };
-		5C17A254242CA87000D9F029 /* IndexAddTeacherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C17A253242CA87000D9F029 /* IndexAddTeacherView.xib */; };
+		5C17A24D242CA82600D9F029 /* CustomAlertThreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C17A24C242CA82600D9F029 /* CustomAlertThreeView.m */; };
+		5C17A24F242CA84700D9F029 /* CustomAlertThreeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C17A24E242CA84700D9F029 /* CustomAlertThreeView.xib */; };
+		5C17A252242CA86600D9F029 /* CustomAlertFourView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C17A251242CA86600D9F029 /* CustomAlertFourView.m */; };
+		5C17A254242CA87000D9F029 /* CustomAlertFourView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C17A253242CA87000D9F029 /* CustomAlertFourView.xib */; };
 		5C17A265242D980F00D9F029 /* UIView+ZJFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C17A257242D980F00D9F029 /* UIView+ZJFrame.m */; };
 		5C17A266242D980F00D9F029 /* ZJTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C17A25B242D980F00D9F029 /* ZJTitleView.m */; };
 		5C17A267242D980F00D9F029 /* UIViewController+ZJScrollPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C17A25C242D980F00D9F029 /* UIViewController+ZJScrollPageController.m */; };
@@ -168,12 +168,12 @@
 		5C04051A2429FDFD00C80A68 /* ProtocolLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolLabel.h; sourceTree = "<group>"; };
 		5C04051C2429FDFE00C80A68 /* AuthCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthCodeView.h; sourceTree = "<group>"; };
 		5C04051D2429FDFE00C80A68 /* AuthCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthCodeView.m; sourceTree = "<group>"; };
-		5C17A24B242CA82600D9F029 /* IndexAddStudentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexAddStudentView.h; sourceTree = "<group>"; };
-		5C17A24C242CA82600D9F029 /* IndexAddStudentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexAddStudentView.m; sourceTree = "<group>"; };
-		5C17A24E242CA84700D9F029 /* IndexAddStudentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndexAddStudentView.xib; sourceTree = "<group>"; };
-		5C17A250242CA86600D9F029 /* IndexAddTeacherView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexAddTeacherView.h; sourceTree = "<group>"; };
-		5C17A251242CA86600D9F029 /* IndexAddTeacherView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexAddTeacherView.m; sourceTree = "<group>"; };
-		5C17A253242CA87000D9F029 /* IndexAddTeacherView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndexAddTeacherView.xib; sourceTree = "<group>"; };
+		5C17A24B242CA82600D9F029 /* CustomAlertThreeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomAlertThreeView.h; sourceTree = "<group>"; };
+		5C17A24C242CA82600D9F029 /* CustomAlertThreeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomAlertThreeView.m; sourceTree = "<group>"; };
+		5C17A24E242CA84700D9F029 /* CustomAlertThreeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertThreeView.xib; sourceTree = "<group>"; };
+		5C17A250242CA86600D9F029 /* CustomAlertFourView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomAlertFourView.h; sourceTree = "<group>"; };
+		5C17A251242CA86600D9F029 /* CustomAlertFourView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomAlertFourView.m; sourceTree = "<group>"; };
+		5C17A253242CA87000D9F029 /* CustomAlertFourView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertFourView.xib; sourceTree = "<group>"; };
 		5C17A256242D980F00D9F029 /* ZJContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJContentView.h; sourceTree = "<group>"; };
 		5C17A257242D980F00D9F029 /* UIView+ZJFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZJFrame.m"; sourceTree = "<group>"; };
 		5C17A258242D980F00D9F029 /* ZJScrollSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollSegmentView.h; sourceTree = "<group>"; };
@@ -470,12 +470,12 @@
 		5C0404C02429EEB500C80A68 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5C17A24B242CA82600D9F029 /* IndexAddStudentView.h */,
-				5C17A24C242CA82600D9F029 /* IndexAddStudentView.m */,
-				5C17A24E242CA84700D9F029 /* IndexAddStudentView.xib */,
-				5C17A250242CA86600D9F029 /* IndexAddTeacherView.h */,
-				5C17A251242CA86600D9F029 /* IndexAddTeacherView.m */,
-				5C17A253242CA87000D9F029 /* IndexAddTeacherView.xib */,
+				5C17A24B242CA82600D9F029 /* CustomAlertThreeView.h */,
+				5C17A24C242CA82600D9F029 /* CustomAlertThreeView.m */,
+				5C17A24E242CA84700D9F029 /* CustomAlertThreeView.xib */,
+				5C17A250242CA86600D9F029 /* CustomAlertFourView.h */,
+				5C17A251242CA86600D9F029 /* CustomAlertFourView.m */,
+				5C17A253242CA87000D9F029 /* CustomAlertFourView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -927,10 +927,10 @@
 				5C17A2A9242DD21600D9F029 /* refresh_head_animation04@3x.png in Resources */,
 				5C17A2A2242DD21600D9F029 /* refresh_head_animation11@3x.png in Resources */,
 				5C17A29F242DD21600D9F029 /* refresh_head_animation05@2x.png in Resources */,
-				5C17A254242CA87000D9F029 /* IndexAddTeacherView.xib in Resources */,
+				5C17A254242CA87000D9F029 /* CustomAlertFourView.xib in Resources */,
 				5C17A2B3242DD21600D9F029 /* refresh_head_animation00@3x.png in Resources */,
 				5C52B60B242C992700BE39DA /* IndexViewController.xib in Resources */,
-				5C17A24F242CA84700D9F029 /* IndexAddStudentView.xib in Resources */,
+				5C17A24F242CA84700D9F029 /* CustomAlertThreeView.xib in Resources */,
 				5C17A2B0242DD21600D9F029 /* refresh_head_animation02@3x.png in Resources */,
 				5C17A27F242DD0E500D9F029 /* README.md in Resources */,
 				5C17A2AC242DD21600D9F029 /* refresh_head_animation04@2x.png in Resources */,
@@ -1038,11 +1038,11 @@
 				5C52B603242B0B6600BE39DA /* UIViewController+PDNavigationItem.m in Sources */,
 				5C0404CE2429EEB500C80A68 /* ExerciseViewController.m in Sources */,
 				5C0405052429EF0100C80A68 /* NSArray+CheckSP.m in Sources */,
-				5C17A252242CA86600D9F029 /* IndexAddTeacherView.m in Sources */,
+				5C17A252242CA86600D9F029 /* CustomAlertFourView.m in Sources */,
 				5C0405012429EF0100C80A68 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				5C0404CF2429EEB500C80A68 /* IndexViewController.m in Sources */,
 				5C17A2B6242DD25500D9F029 /* UIScrollView+HeaderScaleImage.m in Sources */,
-				5C17A24D242CA82600D9F029 /* IndexAddStudentView.m in Sources */,
+				5C17A24D242CA82600D9F029 /* CustomAlertThreeView.m in Sources */,
 				5C4D521C2429E686001AE779 /* AppDelegate.m in Sources */,
 				5C0404CD2429EEB500C80A68 /* ClassViewController.m in Sources */,
 				5C0404FD2429EF0100C80A68 /* BEEGIFImageSerialization.m in Sources */,

@@ -73,8 +73,25 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+        CustomAlertFourView *addTeacherView = [[NSBundle mainBundle]loadNibNamed:@"CustomAlertFourView" owner:self options:nil].lastObject;
+        addTeacherView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        [addTeacherView configLabelTextOne:@"查看资料" textTwo:@"添加课堂评语" texThree:@"通知完善资料"];
+        [addTeacherView setAddActionBlock:^(NSInteger index) {
+            if (index == 1) {
+                //查看资料
+                
+            }else if (index == 2){
+                //添加课堂评语
+                
+            }else if (index == 3){
+                //通知完善资料
 
+            }
+        }];
+        [PDAppDelegate.window addSubview:addTeacherView];
+    
 }
+
 
 
 #pragma mark - DZNEmptyDataSetSource,DZNEmptyDataSetDelegate -

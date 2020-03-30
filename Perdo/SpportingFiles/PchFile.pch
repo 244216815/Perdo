@@ -40,6 +40,8 @@
 
 //#import "BEEProgressHUD.h"
 #import "MemberInfoModel.h"
+#import "CustomAlertFourView.h"
+#import "CustomAlertThreeView.h"
 
 /*Other*/
 //#import "BPKit.h"

@@ -6,13 +6,13 @@
 //  Copyright © 2020 Perdo. All rights reserved.
 //
 
-#import "IndexAddStudentView.h"
+#import "CustomAlertThreeView.h"
 
-@interface IndexAddStudentView ()
+@interface CustomAlertThreeView ()
 
 
 @end
-@implementation IndexAddStudentView
+@implementation CustomAlertThreeView
 
 -(void)awakeFromNib{
     [super awakeFromNib];
@@ -22,6 +22,11 @@
     self.studentView.layer.cornerRadius = 8;
     
     
+}
+
+-(void)configLabelTextOne:(NSString *)textOne textTwo:(NSString *)textTwo{
+    self.label1.text = textOne;
+    self.label2.text = textTwo;
 }
 
 - (IBAction)btnAction:(UIButton *)sender {

@@ -60,11 +60,11 @@
 #pragma mark - UITabelViewDelegate,UITableViewDataSource -
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 //    return self.dataArray.count;
-    return 0;
+    return 10;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 110;
+    return 234;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -96,7 +96,9 @@
 
 -(UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight-kNavBarHeight-100-40) style:UITableViewStylePlain];
+        NSInteger height = RoleTypeTeacher?(kScreenHeight-kNavBarHeight-172-kTabBarHeight-44):(kScreenHeight-kNavBarHeight-kTabBarHeight-44);
+        height = kScreenHeight-kNavBarHeight-172-kTabBarHeight-44;
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, height) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.emptyDataSetSource = self;

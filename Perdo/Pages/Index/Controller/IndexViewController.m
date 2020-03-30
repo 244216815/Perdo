@@ -7,8 +7,8 @@
 //
 
 #import "IndexViewController.h"
-#import "IndexAddTeacherView.h"
-#import "IndexAddStudentView.h"
+#import "CustomAlertFourView.h"
+#import "CustomAlertThreeView.h"
 
 @interface IndexViewController ()
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topViewLayout;
@@ -69,26 +69,28 @@
 
 - (void)addAction{
     if (RoleTypeTeacher) {
-//        IndexAddTeacherView *addTeacherView = [[NSBundle mainBundle]loadNibNamed:@"IndexAddTeacherView" owner:self options:nil].lastObject;
-//        addTeacherView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-//        [addTeacherView setAddActionBlock:^(NSInteger index) {
-//            if (index == 1) {
-//                //创建群聊
-//            }else if (index == 2){
-//                //加入学校/班级
-//            }else if (index == 3){
-//                //创建年级/班级
-//
-//            }
-//        }];
-//        [PDAppDelegate.window addSubview:addTeacherView];
+        CustomAlertFourView *addTeacherView = [[NSBundle mainBundle]loadNibNamed:@"CustomAlertFourView" owner:self options:nil].lastObject;
+        addTeacherView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        [addTeacherView configLabelTextOne:@"创建群聊" textTwo:@"加入学校/班级" texThree:@"创建年级/班级"];
+        [addTeacherView setAddActionBlock:^(NSInteger index) {
+            if (index == 1) {
+                //创建群聊
+            }else if (index == 2){
+                //加入学校/班级
+            }else if (index == 3){
+                //创建年级/班级
+
+            }
+        }];
+        [PDAppDelegate.window addSubview:addTeacherView];
         
     }
     
     if (RoleTypeStudent) {
        
-        IndexAddStudentView *addStudentView = [[NSBundle mainBundle]loadNibNamed:@"IndexAddStudentView" owner:self options:nil].lastObject;
+        CustomAlertThreeView *addStudentView = [[NSBundle mainBundle]loadNibNamed:@"CustomAlertThreeView" owner:self options:nil].lastObject;
         addStudentView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        [addStudentView configLabelTextOne:@"创建群聊" textTwo:@"关联学生"];
         [addStudentView setAddActionBlock:^(NSInteger index) {
             if (index == 1) {
                 //创建群聊
