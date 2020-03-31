@@ -58,19 +58,20 @@
                     <constraint firstAttribute="trailing" secondItem="SQx-v7-Zjb" secondAttribute="trailing" id="LT5-Sp-9pf"/>
                     <constraint firstItem="Lby-cD-GYd" firstAttribute="leading" secondItem="7YX-4e-X5z" secondAttribute="trailing" constant="8" id="Lac-ve-E0z"/>
                     <constraint firstItem="7YX-4e-X5z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="N7Y-Ea-TcN"/>
+                    <constraint firstItem="7YX-4e-X5z" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="REd-gl-b1E"/>
                     <constraint firstItem="fTq-c2-kSu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Uvc-bB-sim"/>
                     <constraint firstItem="SQx-v7-Zjb" firstAttribute="leading" secondItem="Lby-cD-GYd" secondAttribute="leading" id="Zcu-Oe-pZx"/>
                     <constraint firstAttribute="bottom" secondItem="7YX-4e-X5z" secondAttribute="bottom" constant="12" id="aQ6-de-hug"/>
                     <constraint firstItem="SQx-v7-Zjb" firstAttribute="top" secondItem="fTq-c2-kSu" secondAttribute="bottom" id="aqC-gH-iRf"/>
                     <constraint firstItem="Lby-cD-GYd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gIi-FM-1FI"/>
                     <constraint firstAttribute="bottom" secondItem="SQx-v7-Zjb" secondAttribute="bottom" id="n1s-gt-hKd"/>
-                    <constraint firstItem="7YX-4e-X5z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="nym-k4-o3i"/>
                     <constraint firstItem="CGF-vO-UuX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rXd-Df-Be2"/>
                     <constraint firstAttribute="trailing" secondItem="fTq-c2-kSu" secondAttribute="trailing" constant="8" id="sGy-Mn-v9g"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
+                <outlet property="editBtn" destination="fTq-c2-kSu" id="j8J-6n-AOv"/>
                 <outlet property="tab" destination="CGF-vO-UuX" id="iU1-Se-9Xb"/>
             </connections>
             <point key="canvasLocation" x="138.40579710144928" y="109.82142857142857"/>

@@ -68,14 +68,14 @@
 }
 
 - (void)buildTopView{
-    [self.topView addSubview:self.nameButton];
+//    [self.topView addSubview:self.nameButton];
     
     [self.topView addSubview:self.scaleLabel];
     [self.topView addSubview:self.countLabel];
     [self.topView addSubview:self.attendanceLabel];
     NSArray *nameArray = @[@"人数比例",@"缺勤人数",@"出勤率"];
     for (int i = 0; i<3; i++) {
-        UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(16+ (SCREEN_WIDTH-32)/3*i, 111, (SCREEN_WIDTH-32)/3, 17)];
+        UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(16+ (SCREEN_WIDTH-32)/3*i, 55, (SCREEN_WIDTH-32)/3, 17)];
         label.text = nameArray[i];
         label.textColor = UIColorHex(4c4e4d);
         label.font = [UIFont systemFontOfSize:12];
@@ -84,7 +84,7 @@
     }
     
     UIButton *countBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [countBtn setFrame:CGRectMake(16+ (SCREEN_WIDTH-32)/3, 56, (SCREEN_WIDTH-32)/3, 85)];
+    [countBtn setFrame:CGRectMake(16+ (SCREEN_WIDTH-32)/3, 0, (SCREEN_WIDTH-32)/3, 85)];
     [[countBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
         //跳转到缺勤人数
         
@@ -130,7 +130,7 @@
 
 -(UIView *)topView{
     if (!_topView) {
-        _topView = [[UIView alloc]initWithFrame:CGRectMake(0, kNavBarHeight +16, SCREEN_WIDTH, 140)];
+        _topView = [[UIView alloc]initWithFrame:CGRectMake(0, kNavBarHeight, SCREEN_WIDTH, 85)];
         _topView.backgroundColor = UIColorHex(ffffff);
     }
     return _topView;
@@ -157,7 +157,7 @@
 
 -(UILabel *)scaleLabel{
     if (!_scaleLabel) {
-        _scaleLabel = [[UILabel alloc]initWithFrame:CGRectMake(16, 66, (SCREEN_WIDTH-32)/3, 45)];
+        _scaleLabel = [[UILabel alloc]initWithFrame:CGRectMake(16, 10, (SCREEN_WIDTH-32)/3, 45)];
         _scaleLabel.attributedText = [self attributeTitle:@"40(20/20)" str:@"("];
         _scaleLabel.textAlignment = NSTextAlignmentCenter;
     }
@@ -166,7 +166,7 @@
 
 -(UILabel *)countLabel{
     if (!_countLabel) {
-        _countLabel = [[UILabel alloc]initWithFrame:CGRectMake(16+(SCREEN_WIDTH-32)/3, 66, (SCREEN_WIDTH-32)/3, 45)];
+        _countLabel = [[UILabel alloc]initWithFrame:CGRectMake(16+(SCREEN_WIDTH-32)/3, 10, (SCREEN_WIDTH-32)/3, 45)];
         _countLabel.textColor = UIColorHex(4C4E4D);
         [_countLabel setFont:[UIFont boldSystemFontOfSize:32]];
         _countLabel.textAlignment = NSTextAlignmentCenter;
@@ -177,7 +177,7 @@
 
 -(UILabel *)attendanceLabel{
     if (!_attendanceLabel) {
-        _attendanceLabel = [[UILabel alloc]initWithFrame:CGRectMake(16+(SCREEN_WIDTH-32)/3*2, 66, (SCREEN_WIDTH-32)/3, 45)];
+        _attendanceLabel = [[UILabel alloc]initWithFrame:CGRectMake(16+(SCREEN_WIDTH-32)/3*2, 10, (SCREEN_WIDTH-32)/3, 45)];
         _attendanceLabel.attributedText = [self attributeTitle:@"90%" str:@"%"];
         _attendanceLabel.textAlignment = NSTextAlignmentCenter;
     }
@@ -234,8 +234,8 @@
 
 - (ZJContentView *)scrollContentView{
     if (!_scrollContentView) {
-        NSInteger height = RoleTypeTeacher?(kScreenHeight - kNavBarHeight-172-kTabBarHeight-44):(kScreenHeight - kNavBarHeight-kTabBarHeight-44);
-        height = kScreenHeight - kNavBarHeight-172-kTabBarHeight-44;
+        NSInteger height = RoleTypeTeacher?(kScreenHeight - kNavBarHeight-101-kTabBarHeight-44):(kScreenHeight - kNavBarHeight-kTabBarHeight-44);
+        height = kScreenHeight - kNavBarHeight-101-kTabBarHeight-44;
         _scrollContentView = [[ZJContentView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.segmentView.frame), kScreenWidth, height) segmentView:self.segmentView parentViewController:self delegate:self];
         _scrollContentView.backgroundColor = UIColorHex(ffffff);
     }

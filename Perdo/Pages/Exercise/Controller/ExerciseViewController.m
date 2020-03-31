@@ -7,13 +7,19 @@
 //
 
 #import "ExerciseViewController.h"
+#import "HomeworkTableViewCell.h"
+#import "CourseChoseButton.h"
 
-@interface ExerciseViewController ()
 
-@property (nonatomic, strong)UIView *homeworkView;
-@property (nonatomic, strong)UIView *mistakesView;
+@interface ExerciseViewController ()<UITableViewDelegate,UITableViewDataSource,DZNEmptyDataSetSource,DZNEmptyDataSetDelegate>
+
+//@property (nonatomic, strong)UIView *homeworkView;
+//@property (nonatomic, strong)UIView *mistakesView;
 
 @property (nonatomic, strong)UIButton *oldSelectedBtn;
+
+@property (nonatomic, strong)UITableView *tableView;
+@property (nonatomic, strong)NSMutableArray *dataArray;
 
 
 @end
@@ -66,7 +72,7 @@
     [homeworkView addSubview:titleLabel];
     
     UIButton *moreBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [moreBtn setFrame:CGRectMake(SCREEN_WIDTH - 100-16, 0, 100, 38)];
+    [moreBtn setFrame:CGRectMake(SCREEN_WIDTH - 80-16, 0, 80, 38)];
     [moreBtn setTitle:@"查看更多" forState:UIControlStateNormal];
     [moreBtn setTitleColor:UIColorHex(adb1af) forState:UIControlStateNormal];
     [moreBtn.titleLabel setFont:[UIFont systemFontOfSize:12]];
@@ -116,7 +122,9 @@
 
     }
     titleScrollview.contentSize = CGSizeMake((16+48*array.count), 34);
+    
 
+    [homeworkView addSubview:self.tableView];
 }
 
 - (void)addMistakesView{
@@ -133,15 +141,83 @@
     UIView *lineView = [[UIView alloc]initWithFrame:CGRectMake(0, 38, SCREEN_WIDTH, 0.5)];
     lineView.backgroundColor = UIColorHex(e8e9e9);
     [mistakesView addSubview:lineView];
-       
     
-    
-    
-    
+    NSArray *array = @[@"语文",@"数学",@"英语"];
+    for (int i = 0; i<array.count; i++) {
+        CourseChoseButton *courseBtn = [[CourseChoseButton alloc]initWithFrame:CGRectMake(16+88*i, 55, 80, 32)];
+        [courseBtn setTitle:array[i] forState:UIControlStateNormal];
+        [courseBtn setTitleColor:UIColorHex(4c4e4d) forState:UIControlStateNormal];
+        [courseBtn configTitle:@"200"];
+        [[courseBtn rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+            
+        }];
+        [mistakesView addSubview:courseBtn];
+    }
+}
+
+#pragma mark - UITabelViewDelegate,UITableViewDataSource -
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+//    return self.dataArray.count;
+//    NSInteger count = self.dataArray.count>5?5:self.dataArray.count;
+    return 5;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 28;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    HomeworkTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeworkTableViewCell"];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+//    PhoneChargeListModel *model = self.dataArray[indexPath.row];
+//    [cell configModel:model];
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
 }
 
 
+#pragma mark - DZNEmptyDataSetSource,DZNEmptyDataSetDelegate -
+ - (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView{
+     return [UIImage imageNamed:@"no_data_placeholder"];
+ }
 
+ - (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView{
+     return  [[NSAttributedString alloc] initWithString:@"暂无数据" attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#DEE2EB"],NSFontAttributeName:[UIFont fontWithName:@"PingFangSC-Regular" size:15]}];
+ }
+
+ - (CGFloat)verticalOffsetForEmptyDataSet:(UIScrollView *)scrollView{
+     return -50;
+ }
+
+
+
+-(UITableView *)tableView{
+    if (!_tableView) {
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 73, SCREEN_WIDTH, 161) style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.emptyDataSetSource = self;
+        _tableView.emptyDataSetDelegate = self;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        [_tableView registerNib:[UINib nibWithNibName:@"HomeworkTableViewCell" bundle:nil] forCellReuseIdentifier:@"HomeworkTableViewCell"];
+        //        @weakify(self);
+        //        [_tableView configRefreshHeaderAndFooterWithBeginRefresh:^{
+        //            @strongify(self);
+        //            [self requestData];
+        //        }];
+    }
+    return _tableView;
+}
+
+-(NSMutableArray *)dataArray{
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
+}
 
 
 /*

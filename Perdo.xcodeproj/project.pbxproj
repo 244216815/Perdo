@@ -94,6 +94,9 @@
 		5C52B603242B0B6600BE39DA /* UIViewController+PDNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C52B600242B0B6600BE39DA /* UIViewController+PDNavigationItem.m */; };
 		5C52B604242B0B6600BE39DA /* UITableViewCell+PDLineSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C52B602242B0B6600BE39DA /* UITableViewCell+PDLineSpace.m */; };
 		5C52B60B242C992700BE39DA /* IndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C52B60A242C992700BE39DA /* IndexViewController.xib */; };
+		5C55A3B22432DCD0005E48FA /* HomeworkTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C55A3B02432DCD0005E48FA /* HomeworkTableViewCell.m */; };
+		5C55A3B32432DCD0005E48FA /* HomeworkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C55A3B12432DCD0005E48FA /* HomeworkTableViewCell.xib */; };
+		5C55A3BC24330D40005E48FA /* CourseChoseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C55A3BB24330D40005E48FA /* CourseChoseButton.m */; };
 		7D3AD381AB27F9356A453508 /* Pods_Perdo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F585664F33D16024D59559C /* Pods_Perdo.framework */; };
 /* End PBXBuildFile section */
 
@@ -259,6 +262,11 @@
 		5C52B601242B0B6600BE39DA /* UIViewController+PDNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PDNavigationItem.h"; sourceTree = "<group>"; };
 		5C52B602242B0B6600BE39DA /* UITableViewCell+PDLineSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+PDLineSpace.m"; sourceTree = "<group>"; };
 		5C52B60A242C992700BE39DA /* IndexViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndexViewController.xib; sourceTree = "<group>"; };
+		5C55A3AF2432DCD0005E48FA /* HomeworkTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeworkTableViewCell.h; sourceTree = "<group>"; };
+		5C55A3B02432DCD0005E48FA /* HomeworkTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeworkTableViewCell.m; sourceTree = "<group>"; };
+		5C55A3B12432DCD0005E48FA /* HomeworkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeworkTableViewCell.xib; sourceTree = "<group>"; };
+		5C55A3BA24330D40005E48FA /* CourseChoseButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CourseChoseButton.h; sourceTree = "<group>"; };
+		5C55A3BB24330D40005E48FA /* CourseChoseButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourseChoseButton.m; sourceTree = "<group>"; };
 		83077C5A823C3868132D4C1D /* Pods-Perdo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perdo.debug.xcconfig"; path = "Target Support Files/Pods-Perdo/Pods-Perdo.debug.xcconfig"; sourceTree = "<group>"; };
 		A6B42605BDFF777BE77139DE /* Pods-Perdo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perdo.release.xcconfig"; path = "Target Support Files/Pods-Perdo/Pods-Perdo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -436,6 +444,11 @@
 		5C0404BA2429EEB500C80A68 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5C55A3BA24330D40005E48FA /* CourseChoseButton.h */,
+				5C55A3BB24330D40005E48FA /* CourseChoseButton.m */,
+				5C55A3AF2432DCD0005E48FA /* HomeworkTableViewCell.h */,
+				5C55A3B02432DCD0005E48FA /* HomeworkTableViewCell.m */,
+				5C55A3B12432DCD0005E48FA /* HomeworkTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -941,6 +954,7 @@
 				5C17A29C242DD21600D9F029 /* refresh_head_animation07@2x.png in Resources */,
 				5C17A2A7242DD21600D9F029 /* refresh_head_animation11@2x.png in Resources */,
 				5C17A2B1242DD21600D9F029 /* refresh_head_animation02@2x.png in Resources */,
+				5C55A3B32432DCD0005E48FA /* HomeworkTableViewCell.xib in Resources */,
 				5C17A2AB242DD21600D9F029 /* refresh_head_animation06@3x.png in Resources */,
 				5C17A2AD242DD21600D9F029 /* refresh_head_animation08@2x.png in Resources */,
 				5C4D522A2429E688001AE779 /* LaunchScreen.storyboard in Resources */,
@@ -1041,6 +1055,7 @@
 				5C17A252242CA86600D9F029 /* CustomAlertFourView.m in Sources */,
 				5C0405012429EF0100C80A68 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				5C0404CF2429EEB500C80A68 /* IndexViewController.m in Sources */,
+				5C55A3BC24330D40005E48FA /* CourseChoseButton.m in Sources */,
 				5C17A2B6242DD25500D9F029 /* UIScrollView+HeaderScaleImage.m in Sources */,
 				5C17A24D242CA82600D9F029 /* CustomAlertThreeView.m in Sources */,
 				5C4D521C2429E686001AE779 /* AppDelegate.m in Sources */,
@@ -1059,6 +1074,7 @@
 				5C17A268242D980F00D9F029 /* ZJContentView.m in Sources */,
 				5C17A266242D980F00D9F029 /* ZJTitleView.m in Sources */,
 				5C52B5F2242AF87100BE39DA /* RoleChoicesViewController.m in Sources */,
+				5C55A3B22432DCD0005E48FA /* HomeworkTableViewCell.m in Sources */,
 				5C0404FC2429EF0100C80A68 /* UIImage+Compress.m in Sources */,
 				5C17A26E242D99E900D9F029 /* HonorViewController.m in Sources */,
 				5C4D522D2429E688001AE779 /* main.m in Sources */,

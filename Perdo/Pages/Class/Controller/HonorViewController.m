@@ -96,8 +96,8 @@
 
 -(UITableView *)tableView{
     if (!_tableView) {
-        NSInteger height = RoleTypeTeacher?(kScreenHeight-kNavBarHeight-172-kTabBarHeight-44):(kScreenHeight-kNavBarHeight-kTabBarHeight-44);
-        height = kScreenHeight-kNavBarHeight-172-kTabBarHeight-44;
+        NSInteger height = RoleTypeTeacher?(kScreenHeight-kNavBarHeight-101-kTabBarHeight-44):(kScreenHeight-kNavBarHeight-kTabBarHeight-44);
+        height = kScreenHeight-kNavBarHeight-101-kTabBarHeight-44;
         _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, height) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;

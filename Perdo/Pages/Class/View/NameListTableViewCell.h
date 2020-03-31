@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NameListTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *tab;
+@property (weak, nonatomic) IBOutlet UIButton *editBtn;
+
+-(void)configBtn;
 
 @end
 
