@@ -15,6 +15,8 @@ target 'Perdo' do
     pod 'YYKit'
     pod 'LFImagePickerController/LFMediaEdit'
 #    pod 'IQKeyboardManager'
+    pod 'HyphenateLite'
+
     
     #UI
     pod 'CYLTabBarController'

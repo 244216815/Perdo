@@ -20,6 +20,7 @@ PODS:
     - CYLTabBarController/Core (= 1.28.5)
   - CYLTabBarController/Core (1.28.5)
   - DBDebugToolkit (0.5.0)
+  - HyphenateLite (3.6.4)
   - LFImagePickerController/Core (1.7.0):
     - LFImagePickerController/LFGifPlayer
     - LFImagePickerController/LFToGIF
@@ -101,6 +102,7 @@ DEPENDENCIES:
   - Bugly
   - CYLTabBarController
   - DBDebugToolkit (= 0.5.0)
+  - HyphenateLite
   - LFImagePickerController/LFMediaEdit
   - lottie-ios
   - Masonry
@@ -124,6 +126,7 @@ SPEC REPOS:
     - Bugly
     - CYLTabBarController
     - DBDebugToolkit
+    - HyphenateLite
     - LFImagePickerController
     - LFMediaEditingController
     - lottie-ios
@@ -157,6 +160,7 @@ SPEC CHECKSUMS:
   Bugly: dbac48b55ad469a97cc4321045cd50df8f63d44f
   CYLTabBarController: edd9fecba9afa3f2e9e44ed50ca6dde69941f25f
   DBDebugToolkit: c04bb6f618051d3de447a4b4323f37826116cfed
+  HyphenateLite: e685f50cb0eaa0b72dd45d30eb813e9e1cfefb42
   LFImagePickerController: 05c39253f65426c740caba42f3c178bc01475c3d
   LFMediaEditingController: 04f662d3a046caa2a9d2162c89e4bda1ce626b51
   lottie-ios: 85ce835dd8c53e02509f20729fc7d6a4e6645a0a
@@ -175,6 +179,6 @@ SPEC CHECKSUMS:
   WoodPeckeriOS: bff163c8c996efd45e2fb562f68f6db7f901ac90
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 55a80f29bc047177ca4dff0181856b1c7f801b2b
+PODFILE CHECKSUM: 12497afef66f3c9c14caa449017305b37274d85b
 
 COCOAPODS: 1.9.1

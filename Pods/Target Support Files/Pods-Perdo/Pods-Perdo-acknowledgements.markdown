@@ -101,6 +101,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
+## HyphenateLite
+
+Hyphenate Inc. 2017
+
 ## LFImagePickerController
 
 MIT License

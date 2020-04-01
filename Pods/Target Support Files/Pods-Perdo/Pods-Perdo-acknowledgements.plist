@@ -144,6 +144,16 @@ THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>Hyphenate Inc. 2017</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>HyphenateLite</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>MIT License
 
 Copyright (c) 2017 lincf0912
